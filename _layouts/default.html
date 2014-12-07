@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+    {%if page.css %}
+    {% for stylesheet in page.css %}
+    <link rel="stylesheet" href="/css/{{stylesheet}}.css" media="screen" type="text/css">
+    {% endfor %}
+    {% endif %}
+  <body>
+    <div class="page-content">
+    <!-- Left nav column -->
+    <div class="navcol">
+        <div class="headertext" itemscope itemtype="http://schema.org/Person">
+            <h1 itemprop="name"><a href="{{site.url}}">RICKY DESIGNS</a></h1>
+           <hr>
+
+            <h2>{{page.title}}<span style="color:#FF43AE">// </span></h2>
+        </div>
+        <div class="infotext">
+            {% if page.infotext %}
+            <p>{{page.infotext}}</p>
+            {% endif %}
+        </div>
+    </div>
+    <!--Right hand grid space-->
+    <div class="contentcol">        
+            {{content}}
+    </div>
+      </div>
+        
+    <!-- Importing Javascript files -->
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/mason.js"></script>
+    <script>
+        $(function(){
+            $("#grid").mason({
+                itemSelector: ".box",
+                ratio: 1.1,
+                sizes: [
+                    [1,1],
+                    {% if page.tallcols %}
+                    {{page.tallcols}}
+                    {% endif %}
+                    [2,2]
+                ],
+                promoted: [
+                    [1,1, 'small'],
+                    [1,2, 'tall'],
+                    [2,2, 'large']
+                ],
+                columns: [
+                    [0,480,1],
+                    [480,780,2],
+                    [780,1080,3]
+                ],
+                filler: {
+                    itemSelector: '.fillerBox',
+                    filler_class: 'custom_filler'
+                },
+                layout: 'fluid',
+                gutter: 5
+            });
+        });
+        </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%if page.css %}
+{% for stylesheet in page.css %}
+<link rel="stylesheet" href="/css/{{stylesheet}}.css" media="screen" type="text/css">
+{% endfor %}
+{% endif %}
+
+    <div class="imgcol">
+        {{content}}
+    </div>
+    <div class="infocol">
+        <h1>{{page.title}}</h1>
+        <p>{{infotext}}</p>
+    </div>
