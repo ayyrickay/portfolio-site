@@ -120,9 +120,6 @@ p {
     margin: 20% auto 0 auto;
 }
 
-#nickvision {
-    background-color: #bcbcbc;
-}
 @media only screen and (max-width:960px), only screen and (max-device-width: 960px){
     h1, h2{
         margin:0;
