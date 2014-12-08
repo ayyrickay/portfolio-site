@@ -12,6 +12,10 @@ h1 {
     font-size: 3em;
 }
 
+h1, h2 {
+    text-transform: uppercase;
+}
+
 h1, h2, a{
     font-family: 'Quattrocento Sans', sans-serif;
     font-style: italic;
@@ -104,13 +108,7 @@ p {
 
 .txt {
     height: 15%;
-}
-
-.txt p{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: .5em;
+    font-size: .75em;
 }
 
 .thumbimg {
@@ -129,13 +127,14 @@ p {
 }
 
 .social img{
-    margin: 0 4px 0 4px;
+    margin: 2% 4px 0 4px;
     display: inline-block;
 }
 
 @media only screen and (max-width:960px), only screen and (max-device-width: 960px){
     h1, h2{
         margin:0;
+        text
     }
     
     .navcol{
@@ -170,7 +169,7 @@ p {
     
     .filler{
         width: 100%;
-    }   
+    }
 
 }
 
