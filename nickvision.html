@@ -9,8 +9,11 @@ infotext:   Lorem ipsum dolor sit amet, an solum omittam eum, sit inani lobortis
 <div class="content">
     <div id="grid">
     {% for i in (1..29) %}
-    <div class='box'><div class="thumbnail" >
-    <img src="/img/nickvision/nickvisioncontent{{i}}.png" alt="nickvision booklet contents" class="thumbimg"></div></div>
+    <div class='box {% cycle 'large', 'small',  'small', 'small' %}'>
+        <div class="thumbnail" >
+            <img src="/img/nickvision/nickvisioncontent{{i}}.png" alt="nickvision booklet contents" class="thumbimg">
+        </div>
+        </div>
     {% endfor %}
     </div>
         <div id='fillers'>
