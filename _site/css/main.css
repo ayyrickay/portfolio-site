@@ -30,8 +30,9 @@ hr{
 
 p {
     color: black;
-    font-size: .5em;
+    font-size: .75em;
     font-family: Raleway, sans-serif;
+    text-align: center;
 }
 
 .navcol {
@@ -60,10 +61,6 @@ p {
     font-family: 'Raleway', sans-serif;
     color: #eaeaea;
     background-color: #000;
-}
-
-#grid p {
-    text-align: center;
 }
 
 .box {
@@ -102,12 +99,18 @@ p {
 .thumbnail {
     overflow: hidden;
     height: 90%;
-    margin: 0 5% 0 5%;
     position: relative;
 }
 
 .txt {
     height: 15%;
+}
+
+.txt p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .5em;
 }
 
 .thumbimg {
@@ -118,6 +121,17 @@ p {
 
 .selfportrait {
     margin: 20% auto 0 auto;
+}
+
+.social {
+    margin-top: 1%;
+    text-align: center;
+    position: relative;
+}
+
+.social img{
+    margin: 0 4px 0 4px;
+    display: inline-block;
 }
 
 @media only screen and (max-width:960px), only screen and (max-device-width: 960px){
@@ -157,8 +171,7 @@ p {
     
     .filler{
         width: 100%;
-    }
-    
+    }   
 
 }
 
