@@ -26,14 +26,17 @@
         <a href="https://twitter.com/AyyRickay" target="_blank">
             <img src="/img/icons/twitter.svg" alt="twitter">
         </a>
-        <a href="https://www.linkedin.com/in/rickyholtz" target="_blank">
-            <img src="/img/icons/linkedin.svg" alt="linkedin">
-        </a>
         <a href="http://instagram.com/ayyrickay" target="_blank">
             <img src="/img/icons/instagram.svg" alt="instagram">
         </a>
+        <a href="https://www.linkedin.com/in/rickyholtz" target="_blank">
+            <img src="/img/icons/linkedin.svg" alt="linkedin">
+        </a>
         <a href="mailto:hello@rickydesign.me" target="_blank">
             <img src="/img/icons/email.svg" alt="email">
+        </a>
+        <a href="/img/assets/resume.rickyholtz.pdf" download>
+            <img src="/img/icons/resume.svg" alt="ricky holtz resume">
         </a>
     </div> 
     </div>
@@ -46,6 +49,9 @@
     <!-- Importing Javascript files -->
     <script src="/js/jQuery.js"></script>
     <script src="/js/mason.js"></script>
+      {% if page.js %}
+    <script src="/js/{{page.js}}"></script>
+      {% endif %}
     <script>
         $(function(){
             $("#grid").mason({
@@ -77,14 +83,14 @@
             });
         });
         </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-57440255-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+            ga('create', 'UA-57440255-1', 'auto');
+            ga('send', 'pageview');
+        </script>
   </body>
 </html>
