@@ -1,16 +1,119 @@
 *{
-	margin:0px;
+    margin: 0;
+    padding: 0;
 }
 
-html{
+html,body{
     height: 100%; 
-    width: 100%;
-    background-size: cover;
-    background: url("/img/assets/rawr.png") no-repeat center center fixed;
+    min-width: 100%;
+    overflow-x: hidden
 }
 
-#comingSoon {
-    color: #000;
-    font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+h1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
     font-size: 3em;
+}
+
+h2, p {
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+a:hover{
+    color: #ff43ae;
+}
+
+a:visited{
+    color: #00b1f0;
+}
+
+.section-content {
+    overflow: hidden;
+    max-height: 100%;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+}
+
+.photo {
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#img {
+    top:0;
+    max-height: 782px;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+}
+
+.text img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#work-flex {
+    display: block;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0 5% 0 5%;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    padding: 10px;
+    width: 225px;
+    height: 225px;
+    margin-top: 20px;
+    
+    line-height: 150px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    
+    -webkit-filter: grayscale(.85);
+    filter: grayscale(.85);
+    transition: .5s;
+}
+
+.flex-item:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+.work-items {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+
+    
 }
