@@ -136,15 +136,15 @@ a:visited{
 
 @media screen and (max-width:1249px){    
     .skills-img {
-        background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat;
+        background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
     }
 
     .about-img {
-        background: url("/img/backgrounds/helloricky-ipad.png") no-repeat;
+        background: url("/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
     }
 
     .contact-img{
-        background: url("/img/backgrounds/contact-ipad.png") no-repeat;
+        background: url("/img/backgrounds/contact-ipad.png") no-repeat bottom left;
     }
     
     .skill-icons{
