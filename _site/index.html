@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Ricky Holtz Portfolio</title>
-  <meta name="description" content="just trying to make stuff
+    <title>Ricky Holtz Portfolio</title>
+    <meta name="description" content="just trying to make stuff
 ">
-  <link rel="stylesheet" href="/css/main1.css">
-  <link rel="canonical" href="http://rickydesign.me/">
+    <link rel="canonical" href="http://rickydesign.me/">
+    
+    <!-- loading CSS & fonts -->
+    <link rel="stylesheet" href="/css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300|Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 
-    
   <body>
     <div class="page-content">
             <div class="content">
     <div id="fullpage">
         <div class="section">
-            <div class="section-content">
-                <div class="photo">
-                    <img src="/img/backgrounds/helloricky.png" alt="A silly picture of Ricky Holtz">
-                </div>
+            <div class="section-content about-img">
                 <div class="text">
                     <h1>Hey there!<br>My name is Ricky.</h1>
                         <p>i design things with people, for people.</p> <br>
@@ -32,20 +30,17 @@
         </div>
         
         <div class="section">
-            <div class="section-content">
-                <div class="photo">
-                    <img src="/img/backgrounds/rickystylus.png" alt="Ricky pointing a stylus">
-                </div>
+            <div class="section-content skills-img">
                 <div class="text">
                     <h1 style="margin-left:5%;">I use tools like:</h1>
                     <br>
-                    <img src="/img/icons/photoshop.svg" alt="adobe creative cloud logo">
+                    <img src="/img/icons/photoshop.svg" class="skill-icon" alt="adobe creative cloud icon">
                     <p>photoshop, illustrator & indesign.</p>
                     <br>
-                    <img src="/img/icons/webdev.svg">
+                    <img src="/img/icons/webdev.svg" class="skill-icon" alt ="computer icon with paint brush">
                     <p>html5, css3, javascript & python.</p>
                     <br>
-                    <img src="/img/icons/penpaper.svg">
+                    <img src="/img/icons/penpaper.svg" class="skill-icon" alt="pen and paper icon">
                     <p>and sometimes just a pen and paper.<br>
                     or... well, a stylus and tablet.</p>
                 </div>
@@ -53,7 +48,7 @@
         </div>
         <div class="section">
             <div class="section-content" id="work-flex">
-                <h1>to make stuff like this:</h1>
+                <h1 style="margin-left:5%;">to make stuff like this:</h1>
                 <ul class="flex-container">
                     <li><img src="/img/work/crisco.png" class="flex-item"></li>
                     <li><a href="img/assets/beta_infographic.pdf" target="_blank"><img src="/img/work/beta-infographic.png" class="flex-item"></a></li>
@@ -64,8 +59,7 @@
             </div>
         </div>
         <div class="section">
-            <div class="section-content">
-                <div class="photo"><img src="/img/backgrounds/mywork.png" alt="pointing yeahhh"></div>
+            <div class="section-content contact-img">
                 <div class="text">
                     <h1>Let's talk.</h1>
                     <a href="https://twitter.com/AyyRickay" target="_blank">
@@ -106,7 +100,6 @@
     <script type="text/javascript" src="/js/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="/js/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="/js/mason.min.js"></script>
       
       <!-- Initializizing fullpage.js-->
     <script type="text/javascript">
@@ -114,7 +107,7 @@
             $('#fullpage').fullpage({
                 //options
                 sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
-                anchors: ['about', 'skills', 'work', 'contact'],
+                anchors: ['', 'skills', 'work', 'contact'],
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['about', 'skills', 'work', 'contact'],
@@ -122,33 +115,6 @@
             });
         });
     </script>
-    
-      <!--Initializing mason.js-->
-    <script type="text/javascript">
-        $(function(){
-            $("#grid").mason({
-                itemSelector: ".box",
-                ratio: 1.1,
-                sizes: [
-                    [1,1]
-                ],
-                promoted: [
-                    [1,1, 'small'],
-                ],
-                columns: [
-                    [0,100,1],
-                    [100,200,2],
-                    [200,300,3]
-                ],
-                filler: {
-                    itemSelector: '.fillerBox',
-                    filler_class: 'custom_filler'
-                },
-                layout: 'fluid',
-            });
-        });
-    </script>
-
       
     <!-- Google Analytics-->
     <script>

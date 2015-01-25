@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
     {% include head.html %}
-    {%if page.css %}
-    {% for stylesheet in page.css %}
-    <link rel="stylesheet" href="/css/{{stylesheet}}.css" media="screen" type="text/css">
-    {% endfor %}
-    {% endif %}
   <body>
     <div class="page-content">
             {{content}}
@@ -19,7 +14,6 @@
     <script type="text/javascript" src="/js/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="/js/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="/js/mason.min.js"></script>
       
       <!-- Initializizing fullpage.js-->
     <script type="text/javascript">
@@ -27,7 +21,7 @@
             $('#fullpage').fullpage({
                 //options
                 sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
-                anchors: ['about', 'skills', 'work', 'contact'],
+                anchors: ['', 'skills', 'work', 'contact'],
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['about', 'skills', 'work', 'contact'],
@@ -35,33 +29,6 @@
             });
         });
     </script>
-    
-      <!--Initializing mason.js-->
-    <script type="text/javascript">
-        $(function(){
-            $("#grid").mason({
-                itemSelector: ".box",
-                ratio: 1.1,
-                sizes: [
-                    [1,1]
-                ],
-                promoted: [
-                    [1,1, 'small'],
-                ],
-                columns: [
-                    [0,100,1],
-                    [100,200,2],
-                    [200,300,3]
-                ],
-                filler: {
-                    itemSelector: '.fillerBox',
-                    filler_class: 'custom_filler'
-                },
-                layout: 'fluid',
-            });
-        });
-    </script>
-
       
     <!-- Google Analytics-->
     <script>
