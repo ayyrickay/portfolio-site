@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,64 +8,157 @@
   <title>Ricky Holtz Portfolio</title>
   <meta name="description" content="just trying to make stuff
 ">
-
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main1.css">
   <link rel="canonical" href="http://rickydesign.me/">
-  <link rel="alternate" type="application/atom+xml" title="Ricky Holtz Portfolio" href="http://rickydesign.me/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300|Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 
     
   <body>
     <div class="page-content">
-    <!--Right hand grid space-->
-        <div class="content">
-    <span id="comingSoon"><h1>Coming Soon.</h1></span>
+            <div class="content">
+    <div id="fullpage">
+        <div class="section">
+            <div class="section-content">
+                <div class="photo">
+                    <img src="/img/backgrounds/helloricky.png" alt="A silly picture of Ricky Holtz">
+                </div>
+                <div class="text">
+                    <h1>Hey there!<br>My name is Ricky.</h1>
+                        <p>i design things with people, for people.</p> <br>
+                    <p><a href="#skills">about</a> | <a href="#work">work</a> | <a href="#contact">contact</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-content">
+                <div class="photo">
+                    <img src="/img/backgrounds/rickystylus.png" alt="Ricky pointing a stylus">
+                </div>
+                <div class="text">
+                    <h1 style="margin-left:5%;">I use tools like:</h1>
+                    <br>
+                    <img src="/img/icons/photoshop.svg" alt="adobe creative cloud logo">
+                    <p>photoshop, illustrator & indesign.</p>
+                    <br>
+                    <img src="/img/icons/webdev.svg">
+                    <p>html5, css3, javascript & python.</p>
+                    <br>
+                    <img src="/img/icons/penpaper.svg">
+                    <p>and sometimes just a pen and paper.<br>
+                    or... well, a stylus and tablet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-content" id="work-flex">
+                <h1>to make stuff like this:</h1>
+                <ul class="flex-container">
+                    <li><img src="/img/work/crisco.png" class="flex-item"></li>
+                    <li><a href="img/assets/beta_infographic.pdf" target="_blank"><img src="/img/work/beta-infographic.png" class="flex-item"></a></li>
+                    <li><a href="http://tinyurl.com/i213chipin" target="_blank"><img src="/img/work/chipin.png" class="flex-item"></a></li>
+                    <li><a href="https://www.behance.net/gallery/20033415/NickVision" target="_blank"><img src="/img/work/nickvision.png" class="flex-item"></a></li>
+                    <li><a href="https://www.behance.net/gallery/20033855/PaperTrail-Writing-Guide" target="_blank"><img src="/img/work/papertrail.png" class="flex-item"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-content">
+                <div class="photo"><img src="/img/backgrounds/mywork.png" alt="pointing yeahhh"></div>
+                <div class="text">
+                    <h1>Let's talk.</h1>
+                    <a href="https://twitter.com/AyyRickay" target="_blank">
+                        <img src="/img/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="http://instagram.com/ayyrickay" target="_blank">
+                        <img src="/img/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rickyholtz" target="_blank">
+                        <img src="/img/icons/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="mailto:hello@rickydesign.me" target="_blank">
+                        <img src="/img/icons/email.svg" alt="email">
+                    </a>
+                    <a href="/img/assets/resume.rickyholtz.pdf" target="_blank">
+                        <img src="/img/icons/resume.svg" alt="ricky holtz resume">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+            <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script>. ricky holtz.</p>
     </div>
+</footer>
+
+      </div>
         
-    <!-- Importing Javascript files -->
-    <script src="/js/jQuery.js"></script>
-    <script src="/js/mason.js"></script>
+    <!-- Importing jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       
-    <script>
+      <!-- Loading fullpage.js & vendors-->
+    <script type="text/javascript" src="/js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="/js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="/js/mason.min.js"></script>
+      
+      <!-- Initializizing fullpage.js-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                //options
+                sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+                anchors: ['about', 'skills', 'work', 'contact'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['about', 'skills', 'work', 'contact'],
+                scrollOverflow: 'true'
+            });
+        });
+    </script>
+    
+      <!--Initializing mason.js-->
+    <script type="text/javascript">
         $(function(){
             $("#grid").mason({
                 itemSelector: ".box",
                 ratio: 1.1,
                 sizes: [
-                    [1,1],
-                    
-                    [2,2]
+                    [1,1]
                 ],
                 promoted: [
                     [1,1, 'small'],
-                    [1,2, 'tall'],
-                    [2,2, 'large']
                 ],
                 columns: [
-                    [0,480,1],
-                    [480,780,2],
-                    [780,1080,3]
+                    [0,100,1],
+                    [100,200,2],
+                    [200,300,3]
                 ],
                 filler: {
                     itemSelector: '.fillerBox',
                     filler_class: 'custom_filler'
                 },
                 layout: 'fluid',
-                gutter: 5
             });
         });
-        </script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
 
-            ga('create', 'UA-57440255-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+      
+    <!-- Google Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-57440255-1', 'auto');
+        ga('send', 'pageview');
+    </script>
   </body>
 </html>
