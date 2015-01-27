@@ -89,8 +89,8 @@ a:visited{
 
 .flex-item {
     padding: 10px;
-    width: 225px;
-    height: 225px;
+    max-width: 225px;
+    max-height: 225px;
     margin-top: 20px;
     
     line-height: 150px;
@@ -108,6 +108,10 @@ a:visited{
     -webkit-filter: grayscale(0%);
 }
 
+.laptop{
+    height: 175px;
+}
+
 .work-items {
     list-style: none;
     width: 100%;
@@ -115,8 +119,13 @@ a:visited{
     
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+}
 
-    
+li p {
+    text-transform: lowercase;
+    margin: 0 auto 0 auto;
+    width: 150px;
+    text-align: center;
 }
 
 @media screen and (min-width:1250px){
@@ -156,4 +165,3 @@ a:visited{
         margin: auto auto auto 600px;
     }
 }
-
