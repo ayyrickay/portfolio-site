@@ -11,12 +11,12 @@ html,body{
 
 h1{
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3em;
+    font-family: 'Oswald', helvetica, arial, sans-serif;
+    font-size: 4em;
 }
 
 h2, p, a{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', helvetica, arial, sans-serif;
 }
 
 a{
@@ -59,7 +59,7 @@ a:visited{
 
 .text {
     text-align: center;
-    margin: auto auto auto 950px;
+    margin: auto 50px auto 900px;
     min-width: 300px;
 }
 
@@ -135,7 +135,7 @@ li p {
     }
 
     .about-img {
-        background: url("/img/backgrounds/helloricky.png") no-repeat bottom left;
+        background: url("/img/backgrounds/hellorickytransparent.png") no-repeat bottom left;
     }
 
     .contact-img{
@@ -162,6 +162,6 @@ li p {
     }
     
     .text{
-        margin: auto auto auto 600px;
+        margin: auto 20px auto 580px;
     }
 }
