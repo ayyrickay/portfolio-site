@@ -5,7 +5,6 @@
     <div class="page-content">
             {{content}}
             {% include footer.html %}
-      </div>
         
     <!-- Importing jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -20,15 +19,16 @@
         $(document).ready(function(){
             $('#fullpage').fullpage({
                 //options
-                sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
                 anchors: ['', 'skills', 'work', 'contact'],
+                sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['about', 'skills', 'work', 'contact'],
-                scrollOverflow: 'true'
+                navigationTooltips: ['hello', 'skills', 'work', 'contact'],
+                scrollOverflow: true
             });
         });
     </script>
+      </div>
       
     <!-- Google Analytics-->
     <script>
