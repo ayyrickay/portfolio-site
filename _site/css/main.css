@@ -16,13 +16,16 @@ h1{
 }
 
 h2, p, a{
-    font-family: 'Lato', helvetica, arial, sans-serif;
+    font-family: lato, helvetica, arial, sans-serif;
 }
 
 a{
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
+}
+
+nav{
+    text-transform: uppercase;
 }
 
 a:hover{
@@ -192,4 +195,8 @@ li p {
 
 .social-icon {
     padding: 0 12px 0 12px;
+}
+
+.page-content {
+    height: 100%;
 }

@@ -1,0 +1,95 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    background: #f2f2f2;
+    overflow: scroll;
+}
+
+li, p{
+    font-family: lato, helvetica, arial, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+h2 {
+    font-family: oswald, helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+img{
+    height: auto;
+}
+
+nav {
+    margin-right: 10px;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    text-align: center;
+}
+
+hr {
+    max-width: 90%;
+    margin: 5px 0 5px 0;
+}
+
+footer{
+    text-align: center;
+}
+
+#work-container {
+    height: 100%;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    
+    justify-content: space-around;
+}
+
+header .left-bound .work-text footer{
+  flex: 1 100%;   
+}
+
+#work-container > * {
+  padding: 20px;
+  flex: 1 100%;
+}
+
+
+@media all and (min-width: 600px){
+    .work-text .left-bound{
+        flex: 1 auto;
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .left-bound{
+      order: 1;
+      max-width: 700px;
+      margin: auto;
+  }
+    
+  .work-text{
+      order: 2;
+      max-width: 45%;
+      margin: auto;
+  }
+  footer {
+      order: 3;
+  }
+}
