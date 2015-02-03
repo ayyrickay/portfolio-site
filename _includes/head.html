@@ -8,7 +8,12 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     
     <!-- loading CSS & fonts -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/jquery.fullPage.css" | prepend: site.baseurl }}">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300|Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/jquery.fullPage.css" | prepend: site.baseurl }}" type="text/css">
+    {%if page.css %}
+        {% for stylesheet in page.css %}
+        <link rel="stylesheet" href="/css/{{stylesheet}}.css" media="screen" type="text/css">
+        {% endfor %}
+    {% endif %}
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Oswald' rel='stylesheet' type='text/css'>
 </head>

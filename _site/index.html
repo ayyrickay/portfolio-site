@@ -11,10 +11,14 @@
     <link rel="canonical" href="http://rickydesign.me/">
     
     <!-- loading CSS & fonts -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/jquery.fullPage.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300|Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700|Oswald' rel='stylesheet' type='text/css'>
 </head>
+
+    <!-- Importing jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <body>
     <div class="page-content">
@@ -25,7 +29,7 @@
                 <div class="text">
                     <h1>Hey there!<br>My name is Ricky.</h1>
                         <p>i design things with people, for people.</p> <br>
-                    <p><a href="#skills">about</a> | <a href="#work">work</a> | <a href="#contact">contact</a></p>
+                    <nav><a href="#skills">about</a> | <a href="#work">work</a> | <a href="#contact">contact</a></nav>
                 </div>
             </div>
         </div>
@@ -54,8 +58,7 @@
                     <li><a href="http://people.ischool.berkeley.edu/~ricky.holtz/server/crisco" target="_blank"><img src="/img/work/crisco.png" class="flex-item"></a>
                         <br> <a href="/img/assets/Crisco_TechnicalReport.pdf" target="_blank"><p>technical documentation</p></a></li>
                     <li><a href="img/assets/beta_infographic.pdf" target="_blank"><img src="/img/work/beta-infographic.png" class="flex-item"></a></li>
-                    <li><a href="http://tinyurl.com/i213chipin" target="_blank"><img src="/img/work/chipin.png" class="flex-item"></a>
-                    <br> <a href="/img/assets/chipin_process.pdf" target="_blank"><p>process documentation</p></a></li>
+                    <li><a href="/work/chipin.html"><img src="/img/work/chipin.png" class="flex-item"></a>
                     <li><a href="/img/assets/nickvision-process.pdf" target="_blank"><img src="/img/work/nickvision.png" class="flex-item"></a></li>
                     <li><a href="https://www.behance.net/gallery/20033855/PaperTrail-Writing-Guide" target="_blank"><img src="/img/work/papertrail.png" class="flex-item"></a></li>
                 </ul>
@@ -86,39 +89,28 @@
     </div>
 </div>
 
-            <footer class="site-footer">
+<!-- Loading fullpage.js & vendors-->
+<script type="text/javascript" src="/js/vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="/js/vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
 
-  <div class="wrapper">
-
-    <p>&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script>. ricky holtz.</p>
-    </div>
-</footer>
-
-        
-    <!-- Importing jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
-      <!-- Loading fullpage.js & vendors-->
-    <script type="text/javascript" src="/js/vendors/jquery.easings.min.js"></script>
-    <script type="text/javascript" src="/js/vendors/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.fullPage.min.js"></script>
-      
-      <!-- Initializizing fullpage.js-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#fullpage').fullpage({
-                //options
-                anchors: ['', 'skills', 'work', 'contact'],
-                sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['hello', 'skills', 'work', 'contact'],
-                scrollOverflow: true
-            });
+<!-- Initializizing fullpage.js-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+            //options
+            anchors: ['', 'skills', 'work', 'contact'],
+            sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['hello', 'skills', 'work', 'contact'],
+            scrollOverflow: true
         });
-    </script>
-      </div>
-      
+    });
+</script>
+
+
+    </div>      
     <!-- Google Analytics-->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
