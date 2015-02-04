@@ -190,6 +190,13 @@ li p {
     .text{
         margin: auto;
     }
+    h1{
+        font-size: 2em;
+    }
+    .text img{
+        max-height: 50px;
+        max-width: 50px;
+    }
 }
 
 
