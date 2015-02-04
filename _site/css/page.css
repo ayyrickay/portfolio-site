@@ -28,6 +28,10 @@ header{
     text-align: center;
 }
 
+header a:visited{
+    color: #000;
+}
+
 hr {
     max-width: 90%;
     margin: 5px 0 5px 0;
