@@ -32,7 +32,9 @@ css: [page, slick, slick-theme]
 <script>
     $(document).ready(function(){
       $('#carousel').slick({
-        dots: true
+          slidesToShow: 1,
+          dots: true,
+          mobileFirst: true
       });
     });
 </script>
