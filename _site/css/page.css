@@ -56,8 +56,13 @@ footer{
     justify-content: space-around;
 }
 
+img{
+    height: 100%;
+}
+
 header .left-bound .work-text footer{
-  flex: 1 100%;   
+    flex: 1 100%;
+    width: 100%;
 }
 
 #work-container > * {
