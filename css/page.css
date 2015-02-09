@@ -57,12 +57,12 @@ footer{
 }
 
 img{
-    height: 100%;
+    max-width: 700px;
 }
 
 header .left-bound .work-text footer{
     flex: 1 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
 #work-container > * {
@@ -74,7 +74,7 @@ header .left-bound .work-text footer{
 @media all and (min-width: 600px){
     .work-text .left-bound{
         flex: 1 auto;
-        max-width: 50%;
+        max-width: 45%;
         margin: auto;
     }
 }
@@ -85,7 +85,7 @@ header .left-bound .work-text footer{
    */
   .left-bound{
       order: 1;
-      max-width: 700px;
+      max-width: 45%;
       margin: auto;
   }
     

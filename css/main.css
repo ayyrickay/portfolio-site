@@ -201,9 +201,14 @@ li p {
 
 
 .social-icon {
+    display: inline;
     padding: 0 12px 0 12px;
 }
 
 .page-content {
     height: 100%;
+}
+
+.social-icons {
+    list-style: none;
 }
