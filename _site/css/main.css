@@ -17,6 +17,7 @@ h1{
 
 h2, p, a{
     font-family: lato, helvetica, arial, sans-serif;
+    font-weight: 300;
 }
 
 a{
