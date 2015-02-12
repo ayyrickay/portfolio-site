@@ -5,7 +5,7 @@ body, html{
     overflow: scroll;
 }
 
-li, p{
+li, p, a{
     font-family: lato, helvetica, arial, sans-serif;
 }
 
@@ -26,6 +26,7 @@ nav {
 
 header{
     text-align: center;
+    max-height: 90px;
 }
 
 header a:visited{
@@ -52,49 +53,55 @@ footer{
     
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    
-    justify-content: space-around;
 }
 
 img{
     max-width: 700px;
 }
 
-header .left-bound .work-text footer{
+header, .left-bound, .work-text, footer{
+    -webkit-flex: 1 100%;
+    padding: 0 10px 0 10px;
     flex: 1 100%;
-    max-width: 100%;
-}
-
-#work-container > * {
-  padding: 20px;
-  flex: 1 100%;
 }
 
 
-@media all and (min-width: 600px){
-    .work-text .left-bound{
-        flex: 1 auto;
-        max-width: 45%;
-        margin: auto;
+@media all and (min-width: 1000px){
+    .share-col{
+        -webkit-flex: 1 0px;
+        flex: 1 0px;
     }
 }
 
+/*
 @media all and (min-width: 800px) {
   /* We invert order of first sidebar and main
    * And tell the main element to take twice as much width as the other two sidebars 
-   */
   .left-bound{
-      order: 1;
-      max-width: 45%;
-      margin: auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    -webkit-order: 1;
+    order: 1;
+    max-width: 45%;
   }
     
   .work-text{
-      order: 2;
-      max-width: 45%;
-      margin: auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    -webkit-order: 2;
+    order: 2;
+    max-width: 45%;
+    margin: auto;
   }
   footer {
+      -webkit-order: 3;
       order: 3;
   }
+}
+*/
+
+#beta-img {
+    background: url('/img/beta-info/top.png') no-repeat;
+    height: 445px;
+    overflow: hidden;
 }

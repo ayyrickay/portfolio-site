@@ -9,9 +9,9 @@
     <meta name="author" content="Ricky Holtz">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     
-    <!-- loading CSS, jQuery, & fonts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- loading fonts, jQuery, and CSS -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,700%7COswald' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     {%if page.css %}
         {% for stylesheet in page.css %}
         <link rel="stylesheet" href="/css/{{stylesheet}}.css" media="screen" type="text/css">
