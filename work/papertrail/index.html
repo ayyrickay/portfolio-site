@@ -6,13 +6,15 @@ role: "visual design"
 problem: "writing is hard. let us help."
 methods: "style tiles, mood boards, "
 artifacts: n/a
-solution: "PaperTrail was a digital humanities project, where a partner and I took charge of the visual site design. We developed a mood board in Pinterest, which led us to creating a few rudimentary color palettes. We then created a few style tiles, while also working on some general wireframes for the team. The project evolved more than I expected, and that was the big takeaway for me: a design will seldom be clear initially, and will almost never be static."
+solution: "PaperTrail was a digital humanities project, where a partner and I took charge of the visual site design. We developed a series of mood boards on Pinterest, which led us to creating a few rudimentary color palettes. We went off and found some templates for style tiles, while also working on some general wireframes for the team. This project challenged me to work from nothing. We didn't have a formal timeline or a ton of outside pressure to move forward, so it took initiative and digging to find out what we should be doing and how we should be doing it."
 ---
 
 <div id="carousel" class="content">
-    <div><object data="/img/papertrail/home.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/papertrail/login.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/papertrail/colorpalette.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/papertrail/pinterest.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/papertrail/styletile.svg" type="image/svg+xml"></object></div>
+    <div id="carousel" class="content">
+    {% for i in (1..5) %}
+        <div>
+            <object data="/img/papertrail/papertrail-{{i}}.svg" type="image/svg+xml"></object>
+        </div>
+    {% endfor %}
+</div>
 </div>

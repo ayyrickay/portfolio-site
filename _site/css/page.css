@@ -7,10 +7,15 @@ body, html{
 
 li, p, a{
     font-family: lato, helvetica, arial, sans-serif;
+    font-size: .9em;
 }
 
 li{
     list-style: none;
+}
+
+li a{
+    color: #00b1f0;
 }
 
 h2 {

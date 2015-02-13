@@ -10,9 +10,11 @@ solution: "In the span of about 8 weeks, we came up with Nickvision, an augmente
 ---
 
 <div id="carousel" class="content">
-    <div><object data="/img/nickvision/booklets.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/nickvision/nickvisionscreen.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/nickvision/nickvisionhand.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/nickvision/hexsketch.svg" type="image/svg+xml"></object></div>
-    <div><object data="/img/nickvision/guidesketch.svg" type="image/svg+xml"></object></div>
+    <div id="carousel" class="content">
+    {% for i in (1..5) %}
+        <div>
+            <object data="/img/nickvision/nickvision-{{i}}.svg" type="image/svg+xml"></object>
+        </div>
+    {% endfor %}
+</div>
 </div>
