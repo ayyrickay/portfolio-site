@@ -132,6 +132,20 @@ li p {
     text-align: center;
 }
 
+.social-icon {
+    display: inline;
+    padding: 0 12px 0 12px;
+}
+
+.page-content {
+    height: 100%;
+}
+
+.social-icons {
+    list-style: none;
+}
+
+
 @media screen and (min-width:1250px){
     
     .skills-img {
@@ -198,18 +212,9 @@ li p {
         max-height: 50px;
         max-width: 50px;
     }
-}
-
-
-.social-icon {
-    display: inline;
-    padding: 0 12px 0 12px;
-}
-
-.page-content {
-    height: 100%;
-}
-
-.social-icons {
-    list-style: none;
+    
+    .social-icon{
+        display: block;
+        padding: 12px;
+    }
 }
