@@ -13,6 +13,7 @@ h1{
     text-transform: uppercase;
     font-family: 'Oswald', helvetica, arial, sans-serif;
     font-size: 4em;
+    letter-spacing: 7px;
 }
 
 h2, p, a{
@@ -125,6 +126,11 @@ a:visited{
     justify-content: space-around;
 }
 
+.project-text{
+    color: #000;
+    font-size: .75em;
+}
+
 li p {
     text-transform: lowercase;
     margin: 0 auto 0 auto;
@@ -207,6 +213,7 @@ li p {
     }
     h1{
         font-size: 2em;
+        letter-spacing: 5px;
     }
     .text img{
         max-height: 50px;
