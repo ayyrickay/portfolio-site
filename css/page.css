@@ -78,9 +78,9 @@ header, .left-bound, .work-text, footer{
         flex: 1 0px;
     }
     
-    .left-bound{
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .work-text{
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
