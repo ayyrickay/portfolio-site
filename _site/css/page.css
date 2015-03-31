@@ -22,6 +22,7 @@ h2 {
     font-family: oswald, helvetica, arial, sans-serif;
     text-transform: uppercase;
     font-size: 2em;
+    letter-spacing: 5px;
 }
 
 nav {
@@ -75,6 +76,11 @@ header, .left-bound, .work-text, footer{
     .share-col{
         -webkit-flex: 1 0px;
         flex: 1 0px;
+    }
+    
+    .left-bound{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
