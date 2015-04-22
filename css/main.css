@@ -71,10 +71,6 @@ a:visited{
     min-width: 300px;
 }
 
-.about-img .text{
-    margin-left: 750px;
-}
-
 .text img{
     max-height: 100px;
     max-width: 100px;
@@ -225,6 +221,7 @@ li p {
         font-size: 2em;
         letter-spacing: 3px;
     }
+    
     .text img{
         max-height: 50px;
         max-width: 50px;
