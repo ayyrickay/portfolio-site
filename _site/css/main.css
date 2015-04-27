@@ -80,14 +80,19 @@ a:visited{
     max-width: 100px;
 }
 
+.skill-icon{
+    opacity: 0;
+}
+
 #work-flex {
     display: block;
     margin: 0 5%;
+    max-width: 1250px;
 }
 
 .flex-container {
     padding: 0;
-    margin: 0 5% 0 5%;
+    margin: 0 5%;
     list-style: none;
 
     display: -webkit-box;
@@ -139,7 +144,7 @@ p, .project-text{
     font-size: .75em;
 }
 
-li p {
+.flex-container li p {
     text-transform: lowercase;
     margin: 0 auto 0 auto;
     width: 150px;
@@ -147,8 +152,13 @@ li p {
 }
 
 .social-icon {
-    display: inline;
-    padding: 0 12px 0 12px;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.hover-text{
+    text-align: center;
+    visibility: hidden;
 }
 
 .page-content {
@@ -157,6 +167,11 @@ li p {
 
 .social-icons {
     list-style: none;
+}
+
+.skill-filter{
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
 }
 
 
@@ -196,6 +211,10 @@ li p {
     .text{
         margin: auto 0 auto 600px;
     }
+    
+    .about-img .text{
+        margin-left: 550px;
+    }
 }
 
 @media screen and (max-width:900px){
@@ -219,6 +238,10 @@ li p {
     .text{
         margin: auto;
         max-width: 85%;
+    }
+    
+    .about-img .text{
+        margin-left: auto;
     }
     
     h1{

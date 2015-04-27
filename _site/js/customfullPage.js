@@ -6,6 +6,20 @@ $(document).ready(function(){
         navigation: true,
         scrollOverflow: true,
         navigationPosition: 'right',
-        navigationTooltips: ['hello', 'skills', 'work', 'contact']
+        navigationTooltips: ['hello', 'skills', 'work', 'contact'],
+        
+        afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+            
+            //slow load skill icons
+            if(anchorLink == 'skills'){
+                $(function(){
+                    $('.skill-icon').each(function(currIcon){
+                        $(this).delay((currIcon++) * 500).fadeTo(1000, 1);
+                    })
+                });
+            };
+        }
+        
     });
 });
