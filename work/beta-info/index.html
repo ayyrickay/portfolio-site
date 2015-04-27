@@ -9,8 +9,10 @@ artifacts: '<a href="/img/assets/beta_infographic.pdf" target="_blank">infograph
 solution: "I wanted to explore the notion of social groups as objects worthy of scrutiny in the realm of information organization and retrieval. As a member of Greek life, I decided to do a bit of historical digging on my fraternity and the broader phenomenon of Greek life in the US to better understand how this category formed and flourished. In the spirit of poststructuralism, I also wanted to explore how a single category could be radically different in a number of contexts. Thus, this infographic tries to explore the factors that influenced the individual, cultural, and institutional categorization of the fraternity, enhancing the understanding by creating a narrative timeline, as well as some visual anchors. In revisiting this project, I would have liked to play around with more quantitative data, but there aren't many sets readily available. "
 ---
 
-<div id="carousel" class="content">
+<div class="banner">
+    <ul>
     {% for i in (1..4) %}
-            <img src="/img/beta-info/beta-info-{{i}}.jpg" alt="process asset for beta theta pi infographic project">
+            <li style="background-image:url(/img/beta-info/beta-info-{{i}}.jpg); background-size: 100% 100%;"></li>
     {% endfor %}
+    </ul>
 </div>

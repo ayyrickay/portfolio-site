@@ -1,7 +1,7 @@
 ---
 layout: default
-css: [main, page, slick, slick-theme]
-js: [slick.min, customSlick]
+css: [main, page]
+js: [jquery, unslider.min, unslider]
 ---
 <div id="work-container">
     <header>
@@ -13,16 +13,16 @@ js: [slick.min, customSlick]
     </div>
     <div class="work-text share-col">
         <h1>{{page.title}}</h1>
-        <ul>
-            <li><span style="font-weight: 700">deliverable:</span> {{page.deliverable}}</li>
-            <li><span style="font-weight: 700">role:</span> {{page.role}}</li>
-            <li><span style="font-weight: 700">problem:</span> {{page.problem}}</li>
-            <li><span style="font-weight: 700">methods:</span> {{page.methods}}</li>
-            <li><span style="font-weight: 700">artifacts:</span> {{page.artifacts}}</li>
-        </ul>
+            <ul>
+                <li><span style="font-weight: 700">deliverable:</span> {{page.deliverable}}</li>
+                <li><span style="font-weight: 700">role:</span> {{page.role}}</li>
+                <li><span style="font-weight: 700">problem:</span> {{page.problem}}</li>
+                <li><span style="font-weight: 700">methods:</span> {{page.methods}}</li>
+                <li><span style="font-weight: 700">artifacts:</span> {{page.artifacts}}</li>
+            </ul>
         <hr>
         <h2>Solution:</h2>
-        <p>{{page.solution}}</p>     
+        <p>{{page.solution}}</p>
     </div>
         {% include footer.html %}
 </div>

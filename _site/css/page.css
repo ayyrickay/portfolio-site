@@ -71,6 +71,22 @@ header, .left-bound, .work-text, footer{
     flex: 1 100%;
 }
 
+/* UNSLIDER CSS */
+.banner{
+    position: relative;
+    overflow: auto;
+}
+
+.banner ul li{
+    float: left;
+    height: 250px;
+    width: 100%;
+}
+
+.banner ul{
+    margin-bottom: 20px;
+}
+
 
 @media all and (min-width: 1000px){
     .share-col{
@@ -82,12 +98,18 @@ header, .left-bound, .work-text, footer{
         margin-top: 25px;
         margin-bottom: 25px;
     }
+    
+    .banner ul li{
+        height: 450px;
+        width: 100%;
+    }
+    
 }
 
 /*
 @media all and (min-width: 800px) {
   /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
+   * And tell the main element to take twice as much width as the other two sidebars
   .left-bound{
     -webkit-flex: 1 auto;
     flex: 1 auto;
@@ -110,9 +132,3 @@ header, .left-bound, .work-text, footer{
   }
 }
 */
-
-#beta-img {
-    background: url('/img/beta-info/top.png') no-repeat;
-    height: 445px;
-    overflow: hidden;
-}
