@@ -62,12 +62,12 @@ footer{
 }
 
 img{
-    max-width: 700px;
+    max-width: 100%;
 }
 
 header, .left-bound, .work-text, footer{
     -webkit-flex: 1 100%;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 10px 10px;
     flex: 1 100%;
 }
 
@@ -79,8 +79,6 @@ header, .left-bound, .work-text, footer{
 
 .banner ul li{
     float: left;
-    height: 250px;
-    width: 100%;
 }
 
 .banner ul{
@@ -97,11 +95,6 @@ header, .left-bound, .work-text, footer{
     .work-text{
         margin-top: 25px;
         margin-bottom: 25px;
-    }
-    
-    .banner ul li{
-        height: 450px;
-        width: 100%;
     }
     
 }
