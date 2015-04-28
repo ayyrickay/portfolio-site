@@ -1,7 +1,7 @@
 ---
 layout: default
 css: [main, jquery.fullPage]
-js: [vendors/jquery.easings.min, vendors/jquery.slimscroll.min, jquery.fullPage.min, customFullpage, animations]
+js: [vendors/jquery.easings.min, vendors/jquery.slimscroll.min, jquery.fullPage.min, animations]
 ---
 
 <div class="content">
@@ -119,6 +119,33 @@ js: [vendors/jquery.easings.min, vendors/jquery.slimscroll.min, jquery.fullPage.
             </div>
         </div>
     </div>
+    <script>
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+            //options
+            anchors: ['', 'skills', 'work', 'contact'],
+            sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+            navigation: true,
+            scrollOverflow: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['hello', 'skills', 'work', 'contact'],
+
+            afterLoad: function(anchorLink, index){
+                var loadedSection = $(this);
+
+                //slow load skill icons
+                if(anchorLink == 'skills'){
+                    $(function(){
+                        $('.skill-icon').each(function(currIcon){
+                            $(this).delay((currIcon++) * 500).fadeTo(1000, 1);
+                        })
+                    });
+                };
+            }
+
+        });
+    });
+    </script>
     {% include footer.html %}
 </div>
 
