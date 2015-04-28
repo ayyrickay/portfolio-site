@@ -9,10 +9,8 @@ artifacts: '<a href="/img/assets/the-light-jacket.pdf" target="_blank">the light
 solution: "With a large amount of my network living in Connecticut and San Diego, I always find it difficult to articulate the weirdness of bay area weather to outsiders. Although they're well-documented phenomena, events like the heat wave in autumn or the general chilly evenings tend to be glossed over by most people who expect cities like San Francisco to be as warm as SoCal (or Florida, depending on the coast.) This results in a lot of unfortunate purchases of Alcatraz sweaters, and a lot of snootiness from New Englanders as they suffer through the winter months. Nonetheless, I took it upon myself to collect some weather data and some chic photos and establish an infographic that presents data in defense of the light jacket.<br> oh, and PS: Mark Twain didn't say the quote here, although it's often misattributed to him. Now you know. ;P"
 ---
 
-<div class="banner">
-    <ul>
+<div class="slick-carousel">
     {% for i in (1..4) %}
-            <li style="background-image:url(/img/lightjacket/lightjacket-{{i}}.jpg); background-size: 100% 100%;"></li>
+        <div><img src="/img/lightjacket/lightjacket-{{i}}.jpg" alt="san francisco weather & fashion data infographic"></div>
     {% endfor %}
-    </ul>
 </div>
