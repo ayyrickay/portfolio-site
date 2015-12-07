@@ -10,3 +10,5 @@ github_username:  ayyrickay
 
 # Build settings
 markdown: kramdown
+sass:
+  #style: compressed

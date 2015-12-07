@@ -1,255 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
-html,body{
-    height: 100%;
-    min-width: 100%;
-    background-color: #f2f2f2;
-}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-h1{
-    text-transform: uppercase;
-    font-family: 'Oswald', helvetica, arial, sans-serif;
-    font-size: 4em;
-    
-    letter-spacing: 5px;
-    line-height: 100%;
-    margin-bottom: 5px;
-}
+body {
+  line-height: 1; }
 
-h2, p, a{
-    font-family: lato, helvetica, arial, sans-serif;
-    font-weight: 300;
-}
+ol, ul {
+  list-style: none; }
 
-a{
-    text-decoration: none;
-    color: #000;
-}
+blockquote, q {
+  quotes: none; }
 
-nav{
-    text-transform: uppercase;
-}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-a:hover{
-    color: #ff43ae;
-}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-a:visited{
-    color: #00b1f0;
-}
+/*  =============================================================================
+ *  variables
+ *  ============================================================================= */
+/*  =============================================================================
+ *  BASE STYLES
+ *  ============================================================================= */
+/*  =============================================================================
+ *  Useful Miscellany
+ *  ============================================================================= */
+.vanish {
+  display: none;
+  visibility: hidden; }
 
-.section-content {
-    overflow: hidden;
-    height: 100%;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -webkit-flex-flow: row wrap;
-}
+/*  =============================================================================
+ *  Default elements
+ *  ============================================================================= */
+nav {
+  padding: 1.5rem 0 1rem 0;
+  width: 80%;
+  margin: 0 auto; }
 
-.photo {
-    max-height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-#img {
-    top:0;
-    max-height: 782px;
-}
-
-.text {
-    text-align: center;
-    margin: auto 0 auto 850px;
-    min-width: 300px;
-}
-
-.about-img .text{
-    margin-left: 750px;
-}
-
-.text img{
-    max-height: 100px;
-    max-width: 100px;
-}
-
-.skill-icon{
-    opacity: 0;
-}
-
-#work-flex {
-    display: block;
-    margin: 0 5%;
-    max-width: 1250px;
-}
-
+/*  =============================================================================
+ *  Layout
+ *  ============================================================================= */
 .flex-container {
-    padding: 0;
-    margin: 0 5%;
-    list-style: none;
+  display: flex; }
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+.width-80pct {
+  width: 80%; }
 
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-}
+.flex-jc-sb {
+  justify-content: space-between; }
 
-.flex-item {
-    padding: 10px;
-    max-width: 225px;
-    max-height: 225px;
-    margin-top: 20px;
-    
-    line-height: 150px;
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    
-    -webkit-filter: grayscale(.90);
-    filter: grayscale(.90);
-    transition: .5s;
-}
+.flex-jc-center {
+  justify-content: center; }
 
-.flex-item:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-}
+.flex-ac-center {
+  align-content: center; }
 
-.laptop{
-    height: 175px;
-}
+.ff-column {
+  flex-flow: column; }
 
-.work-items {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-}
+.horizontal-center {
+  margin: 0 auto; }
 
-p, .project-text{
-    color: #000;
-}
+.vpadding-half-rem {
+  padding: .5rem 0; }
 
-.flex-container li p {
-    text-transform: lowercase;
-    margin: 0 auto 0 auto;
-    width: 150px;
-    text-align: center;
-}
+.vpadding-quarter-rem {
+  padding: .25rem 0; }
 
-.social-icon {
-    display: inline-block;
-    padding: 0 8px;
-}
+.botpadding-quarter-rem {
+  padding-bottom: .25rem; }
 
-.hover-text{
-    text-align: center;
-    visibility: hidden;
-}
+.botpadding-half-rem {
+  padding-bottom: .5rem; }
 
-.page-content {
-    height: 100%;
-}
+.botmargin-rem {
+  margin-bottom: 1rem; }
 
-.social-icons {
-    list-style: none;
-}
+.botmargin-half-rem {
+  margin-bottom: .5rem; }
 
-.skill-filter{
-    -webkit-filter: hue-rotate(90deg);
-    filter: hue-rotate(90deg);
-}
+/*  =============================================================================
+ *  Media Queries
+ *  ============================================================================= */
+@media (min-width: 480px) {
+  .responsive-line {
+    display: inline-block; } }
+@media (min-width: 960px) {
+  .responsive-line {
+    display: block; } }
+/*  =============================================================================
+ *  TYPOGRAPHY STYLES
+ *  ============================================================================= */
+/*  =============================================================================
+ *  default tags
+ *  ============================================================================= */
+html {
+  font-size: 16px;
+  font-family: "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-weight: 300; }
 
+/*  =============================================================================
+ *  hierarchy
+ *  ============================================================================= */
+.page-title {
+  font-family: "acumin-pro-extra-condensed", "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center; }
 
-@media screen and (min-width:1250px){
-    
-    .skills-img {
-        background: url("/img/backgrounds/rickystylus.png") no-repeat bottom left;
-    }
+h2 {
+  font-family: "Bookmania", Georgia, Times, serif;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 1.636rem;
+  line-height: 1.17; }
 
-    .about-img {
-        background: url("/img/backgrounds/hellorickytransparent.png") no-repeat bottom left;
-    }
+h3 {
+  font-size: 1rem;
+  line-height: 1.27;
+  font-weight: 700; }
 
-    .contact-img{
-        background: url("/img/backgrounds/contact.png") no-repeat bottom left;
-    }
-}
+p li {
+  font-size: 1rem;
+  line-height: 1.27; }
 
-@media screen and (max-width:1249px){
-    .skills-img {
-        background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
-    }
+a {
+  font-size: 1rem;
+  line-height: 1.27;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000; }
 
-    .about-img {
-        background: url("/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
-    }
-
-    .contact-img{
-        background: url("/img/backgrounds/contact-ipad.png") no-repeat bottom left;
-    }
-    
-    .skill-icons{
-        position: relative;
-        float: left;
-    }
-    
-    .text{
-        margin: auto 0 auto 600px;
-    }
-    
-    .about-img .text{
-        margin-left: 550px;
-    }
-}
-
-@media screen and (max-width:900px){
-    .skills-img {
-        background: none;
-    }
-
-    .about-img {
-        background: none;
-    }
-
-    .contact-img{
-        background: none;
-    }
-    
-    .skill-icons{
-        position: relative;
-        float: left;
-    }
-    
-    .text{
-        margin: auto;
-        max-width: 85%;
-    }
-    
-    .about-img .text{
-        margin-left: auto;
-    }
-    
-    h1{
-        font-size: 2em;
-        letter-spacing: 3px;
-    }
-    
-    .text img{
-        max-height: 50px;
-        max-width: 50px;
-    }
-}
+/*  =============================================================================
+ *  styling
+ *  ============================================================================= */
+.body-bold {
+  font-weight: 700; }

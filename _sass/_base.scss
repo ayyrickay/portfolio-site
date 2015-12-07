@@ -1,0 +1,91 @@
+/*  =============================================================================
+ *  BASE STYLES
+ *  ============================================================================= */
+
+ /*  =============================================================================
+  *  Useful Miscellany
+  *  ============================================================================= */
+.vanish{
+  display: none;
+  visibility: hidden;
+}
+
+/*  =============================================================================
+ *  Default elements
+ *  ============================================================================= */
+nav {
+  padding: 1.5rem 0 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*  =============================================================================
+ *  Layout
+ *  ============================================================================= */
+.flex-container{
+  display: flex;
+}
+
+.width-80pct{
+  width: 80%;
+}
+
+.flex-jc-sb{
+  justify-content: space-between;
+}
+
+.flex-jc-center{
+  justify-content: center;
+}
+
+.flex-ac-center{
+  align-content: center;
+}
+
+.ff-column{
+  flex-flow:column;
+}
+
+.horizontal-center{
+  margin: 0 auto;
+}
+
+.vpadding-half-rem{
+  padding: .5rem 0;
+}
+
+.vpadding-quarter-rem{
+  padding: .25rem 0;
+}
+
+.botpadding-quarter-rem{
+  padding-bottom: .25rem;
+}
+
+.botpadding-half-rem{
+  padding-bottom: .5rem;
+}
+
+.botmargin-rem{
+  margin-bottom: 1rem;
+}
+
+.botmargin-half-rem{
+  margin-bottom: .5rem;
+}
+
+/*  =============================================================================
+ *  Media Queries
+ *  ============================================================================= */
+
+@media (min-width: 480px){
+  .responsive-line{
+    display: inline-block;
+  }
+}
+
+@media(min-width: 960px){
+  .responsive-line{
+    display: block;
+  }
+}
