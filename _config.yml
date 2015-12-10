@@ -10,5 +10,8 @@ github_username:  ayyrickay
 
 # Build settings
 markdown: kramdown
+#remvoing Jekyll's control over SASS files
+exclude: ['node_modules', 'css', '_scss']
+keep_files: ['_site/css']
 sass:
   #style: compressed

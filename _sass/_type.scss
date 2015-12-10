@@ -17,16 +17,19 @@ html{
 .page-title{
   font-family: "acumin-pro-extra-condensed", $base-font-style;
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 4rem;
 
   text-transform: uppercase;
   text-align: center;
+  display: inline;
 }
 
 h2{
   @include heading-font;
-  font-size: 1.636rem;
-  line-height: 1.17;
+  font-size: 2rem;
+  line-height: 1.5;
+
+  display: inline;
 }
 
 h3{
