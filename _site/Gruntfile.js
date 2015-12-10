@@ -20,11 +20,16 @@ module.exports = function (grunt) {
             }
         },
 
+        // watch for files to change and run tasks when they do
         watch: {
-          sass: {
-            files: ['_sass/**/*.{scss,sass}'],
-            tasks: ['sass']
-          }
+            sass: {
+                files: ['_sass/**/*.{scss,sass}'],
+                tasks: ['sass', 'autoprefixer', 'combine_mq']
+            },
+            styles: {
+              files: ['_site/css/**/*.css'],
+              tasks: ['autoprefixer']
+            }
         },
 
         // sass (libsass) config
@@ -41,25 +46,24 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '_sass/',
                     src: ['**/*.{scss,sass}'],
-                    dest: '_site/css',
+                    dest: '_build/css',
                     ext: '.css'
                 }]
             }
         },
 
-        //autoprefixer config
         autoprefixer: {
           dist: {
             files: {
-              'build/main.css': 'main.css'
+              '_build/css/prefixed-main.css': '_build/css/unprefixed-main.css'
             }
           }
         },
 
-        watch: {
-          styles: {
-            files: ['main.css'],
-            tasks: ['autoprefixer']
+        combine_mq: {
+          main: {
+            src: '_build/css/prefixed-main.css',
+            dest: '_site/css/main.css'
           }
         },
 
@@ -67,28 +71,27 @@ module.exports = function (grunt) {
         concurrent: {
             serve: [
                 'sass',
+                'autoprefixer',
+                'combine_mq',
                 'watch',
                 'shell:jekyllServe'
             ],
             options: {
                 logConcurrentOutput: true
             }
-        },
+        }
 
     });
 
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-
     // Register the grunt serve task
     grunt.registerTask('serve', [
-        'shell:jekyllServe'
+        'concurrent:serve'
     ]);
-
 
     // Register the grunt build task
     grunt.registerTask('build', [
-        'shell:jekyllBuild'
+        'shell:jekyllBuild',
+        'sass'
     ]);
 
     // Register build as the default task fallback

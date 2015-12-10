@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  =============================================================================
+ *  variables
+ *  ============================================================================= */
+/*  =============================================================================
+ *  BASE STYLES
+ *  ============================================================================= */
+/*  =============================================================================
+  *  Useful Miscellany
+  *  ============================================================================= */
+.vanish {
+  display: none;
+  visibility: hidden;
+}
+
+.responsive-line {
+  display: inline;
+}
+
+/*  =============================================================================
+ *  Default elements
+ *  ============================================================================= */
+nav {
+  padding: 1.5rem 0 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*  =============================================================================
+ *  Layout
+ *  ============================================================================= */
+.width-80pct {
+  width: 80%;
+}
+
+.width-100pct {
+  width: 100%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ac-center {
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+.ff-column {
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.horizontal-center {
+  margin: 0 auto;
+}
+
+.vpadding-half-rem {
+  padding: .5rem 0;
+}
+
+.vpadding-quarter-rem {
+  padding: .25rem 0;
+}
+
+.botpadding-quarter-rem {
+  padding-bottom: .25rem;
+}
+
+.botpadding-half-rem {
+  padding-bottom: .5rem;
+}
+
+.botmargin-rem {
+  margin-bottom: 1rem;
+}
+
+.botmargin-half-rem {
+  margin-bottom: .5rem;
+}
+
+.product-thumb {
+  width: 250px;
+}
+
+/*  =============================================================================
+ *  Media Queries
+ *  ============================================================================= */
+@media (min-width: 960px) {
+  .responsive-line {
+    display: block;
+  }
+}
+
+/*  =============================================================================
+ *  TYPOGRAPHY STYLES
+ *  ============================================================================= */
+/*  =============================================================================
+  *  default tags
+  *  ============================================================================= */
+html {
+  font-size: 14px;
+  font-family: "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-weight: 300;
+}
+
+/*  =============================================================================
+ *  hierarchy
+ *  ============================================================================= */
+.page-title {
+  font-family: "acumin-pro-extra-condensed", "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+}
+
+h2 {
+  font-family: "Bookmania", Georgia, Times, serif;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 2rem;
+  display: inline;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/*  =============================================================================
+ *  styling
+ *  ============================================================================= */
+.body-bold {
+  font-weight: 700;
+}
+
+/*  =============================================================================
+  *  styling
+  *  ============================================================================= */
+@media (min-width: 960px) {
+  .page-title {
+    font-size: 5em;
+  }
+}

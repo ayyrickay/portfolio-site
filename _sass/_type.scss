@@ -6,7 +6,7 @@
   *  default tags
   *  ============================================================================= */
 html{
-  font-size: 16px;
+  font-size: 14px;
   font-family: $base-font-style;
   font-weight: $base-font-weight;
 }
@@ -27,7 +27,6 @@ html{
 h2{
   @include heading-font;
   font-size: 2rem;
-  line-height: 1.5;
 
   display: inline;
 }
@@ -38,7 +37,7 @@ h3{
   font-weight: 700;
 }
 
-p li{
+p{
   @include body-copy;
 }
 
@@ -57,3 +56,12 @@ a{
  .body-bold{
    font-weight: 700;
  }
+
+ /*  =============================================================================
+  *  styling
+  *  ============================================================================= */
+  @media(min-width: 960px){
+    .page-title{
+      font-size: 5em;
+    }
+  }
