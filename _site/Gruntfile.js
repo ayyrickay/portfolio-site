@@ -10,26 +10,33 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        path: {
+          build: '_site/assets',
+          inter: '.tmp',
+          src: '_assets'
+        },
         // shell commands for use in Grunt tasks
         shell: {
             jekyllBuild: {
                 command: 'jekyll build'
             },
             jekyllServe: {
-                command: 'jekyll serve'
+                command: 'jekyll serve -H 0.0.0.0'
             }
         },
 
         // watch for files to change and run tasks when they do
         watch: {
             sass: {
-                files: ['_sass/**/*.{scss,sass}'],
+                files: ['<%= path.src %>/sass/**/*.{scss,sass}'],
                 tasks: ['sass', 'autoprefixer', 'combine_mq']
-            },
-            styles: {
-              files: ['_site/css/**/*.css'],
-              tasks: ['autoprefixer']
             }
+            /*,styles: {
+              files: ['_site/css/**
+              //extra line break for comment
+              /*.css'],
+              tasks: ['autoprefixer']
+            }*/
         },
 
         // sass (libsass) config
@@ -38,15 +45,15 @@ module.exports = function (grunt) {
                 sourceMap: true,
                 relativeAssets: false,
                 outputStyle: 'expanded',
-                sassDir: '_sass',
-                cssDir: '_site/css'
+                sassDir: '<%= path.src %>/sass',
+                cssDir: '<%= path.inter %>/css'
             },
             build: {
                 files: [{
                     expand: true,
                     cwd: '_sass/',
                     src: ['**/*.{scss,sass}'],
-                    dest: '_build/css',
+                    dest: '<%= path.inter %>/css',
                     ext: '.css'
                 }]
             }
@@ -54,16 +61,19 @@ module.exports = function (grunt) {
 
         autoprefixer: {
           dist: {
-            files: {
-              '_build/css/prefixed-main.css': '_build/css/unprefixed-main.css'
-            }
+            files: [{
+              expand: true,
+              cwd: '<%= path.inter %>/css',
+              src: '**.*.css',
+              dest: '<%= path.inter %>'
+            }]
           }
         },
 
         combine_mq: {
           main: {
-            src: '_build/css/prefixed-main.css',
-            dest: '_site/css/main.css'
+            src: '<%= path.inter %>/css/*.css',
+            dest: '<%= path.build %>/css/main.css'
           }
         },
 
