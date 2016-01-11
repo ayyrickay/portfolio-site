@@ -22,37 +22,30 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
+  -webkit-margin-after: 0; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*  =============================================================================
  *  variables
@@ -65,12 +58,10 @@ table {
   *  ============================================================================= */
 .vanish {
   display: none;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .responsive-line {
-  display: inline;
-}
+  display: inline; }
 
 /*  =============================================================================
  *  Default elements
@@ -78,80 +69,75 @@ table {
 nav {
   padding: 1.5rem 0 1rem 0;
   width: 80%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /*  =============================================================================
  *  Layout
  *  ============================================================================= */
 .width-80pct {
-  width: 80%;
-}
+  width: 80%; }
 
 .width-100pct {
-  width: 100%;
-}
+  width: 100%; }
 
 .flex-container {
-  display: flex;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .flex-jc-sb {
-  justify-content: space-between;
-}
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .flex-jc-center {
-  justify-content: center;
-}
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .flex-ac-center {
-  align-content: center;
-}
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
 
 .ff-column {
-  flex-flow: column;
-}
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column; }
 
 .horizontal-center {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .vpadding-half-rem {
-  padding: .5rem 0;
-}
+  padding: .5rem 0; }
 
 .vpadding-quarter-rem {
-  padding: .25rem 0;
-}
+  padding: .25rem 0; }
 
 .botpadding-quarter-rem {
-  padding-bottom: .25rem;
-}
+  padding-bottom: .25rem; }
 
 .botpadding-half-rem {
-  padding-bottom: .5rem;
-}
+  padding-bottom: .5rem; }
 
 .botmargin-rem {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 .botmargin-half-rem {
-  margin-bottom: .5rem;
-}
+  margin-bottom: .5rem; }
 
 .product-thumb {
-  width: 250px;
-}
+  width: 250px; }
 
 /*  =============================================================================
  *  Media Queries
  *  ============================================================================= */
 @media (min-width: 960px) {
   .responsive-line {
-    display: block;
-  }
-}
+    display: block; } }
 
 /*  =============================================================================
  *  TYPOGRAPHY STYLES
@@ -162,8 +148,7 @@ nav {
 html {
   font-size: 14px;
   font-family: "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 /*  =============================================================================
  *  hierarchy
@@ -174,8 +159,7 @@ html {
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
-  display: inline;
-}
+  display: inline; }
 
 h2 {
   font-family: "Bookmania", Georgia, Times, serif;
@@ -183,42 +167,33 @@ h2 {
   font-style: italic;
   text-transform: lowercase;
   font-size: 2rem;
-  display: inline;
-}
+  display: inline; }
 
 h3 {
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 p {
   font-size: 1rem;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 a {
   font-size: 1rem;
   line-height: 1.5;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-}
+  color: #000; }
 
 /*  =============================================================================
  *  styling
  *  ============================================================================= */
 .body-bold {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 /*  =============================================================================
   *  styling
   *  ============================================================================= */
 @media (min-width: 960px) {
   .page-title {
-    font-size: 5em;
-  }
-}
-
-/*# sourceMappingURL=unprefixed-main.css.map */
+    font-size: 5em; } }
