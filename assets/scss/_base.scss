@@ -14,20 +14,28 @@
   display: inline;
 }
 
+.content-group{
+  margin: 2rem auto;
+}
+
+.page-margin{
+  width: 90%;
+}
+
 /*  =============================================================================
  *  Default elements
  *  ============================================================================= */
 nav {
   padding: 1.5rem 0 1rem 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 /*  =============================================================================
  *  Layout
  *  ============================================================================= */
- .width-80pct{
-   width: 80%;
+ .width-90pct{
+   width: 90%;
  }
 
  .width-100pct{
@@ -66,6 +74,10 @@ nav {
   padding: .25rem 0;
 }
 
+.vmargin-2rem{
+  margin: 2rem 0;
+}
+
 .botpadding-quarter-rem{
   padding-bottom: .25rem;
 }
@@ -93,5 +105,13 @@ nav {
 @media(min-width: 960px){
   .responsive-line{
     display: block;
+  }
+
+  .skills-img {
+        background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
+    }
+
+  .svg-line {
+    display:none;
   }
 }

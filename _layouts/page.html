@@ -1,28 +1,42 @@
 ---
 layout: default
-css: [main, page, slick-theme, slick]
-js: [jQuery, slick.min, customSlick]
+css: [main]
 ---
-<div id="work-container">
-    <header>
-        <a href="/"><h2>rickydesign.me</h2></a>
-    <nav role="navigation"><a href="/">home</a> | <a href="/#skills">about</a> | <a href="/#work">work</a> | <a href="/#contact">contact</a></nav>
-    </header>
-    <div class="left-bound share-col">
+{% include header.html %}
+<header title="{{page.head-alt}}" class="{{page.header-img}} width-100pct work-header">
+  <h1>{{page.title}}</h1>
+</header>
+<section class="work-text share-col">
+  <img src="{{page.problem-img}}" alt="{{page.problem-alt}}" />
+  <div>
+    <h1>Problem</h1>
+    <ul>
+        <li><span class="body-bold">deliverable:</span> {{page.deliverable}}</li>
+        <li><span class="body-bold">role:</span> {{page.role}}</li>
+        <li><span class="body-bold">methods:</span> {{page.methods}}</li>
+        <li><span class="body-bold">artifacts:</span> {{page.artifacts}}</li>
+    </ul>
+    <p>
+      {{page.problem}}
+    </p>
+  </div>
+</section>
+<section class="flex-container">
+  <img src="{{page.process-img1}}" alt="page.process-txt1" />
+  <img src="{{page.process-img2}}" alt="page.process-txt2" />
+  <img src="{{page.process-img3}}" alt="page.process-txt3" />
+</section>
+<section class="flex-container">
+  <h1>{{page.title}}</h1>
+  <p>
     {{content}}
-    </div>
-    <div class="work-text share-col">
-        <h1>{{page.title}}</h1>
-            <ul>
-                <li><span style="font-weight: 700">deliverable:</span> {{page.deliverable}}</li>
-                <li><span style="font-weight: 700">role:</span> {{page.role}}</li>
-                <li><span style="font-weight: 700">problem:</span> {{page.problem}}</li>
-                <li><span style="font-weight: 700">methods:</span> {{page.methods}}</li>
-                <li><span style="font-weight: 700">artifacts:</span> {{page.artifacts}}</li>
-            </ul>
-        <hr>
-        <h2>Solution:</h2>
-        <p>{{page.solution}}</p>
-    </div>
-        {% include footer.html %}
+  </p>
+</section>
+<section>
+  <h1>Reflection</h1>
+  <p>
+    {{page.reflection}}
+  </p>
+</section>
+{% include footer.html %}
 </div>
