@@ -2,41 +2,46 @@
 layout: default
 css: [main]
 ---
-{% include header.html %}
-<header title="{{page.head-alt}}" class="{{page.header-img}} width-100pct work-header">
-  <h1>{{page.title}}</h1>
-</header>
-<section class="work-text share-col">
-  <img src="{{page.problem-img}}" alt="{{page.problem-alt}}" />
+<section class="flex-row">
   <div>
-    <h1>Problem</h1>
+    <img src="{{page.problem-img}}" alt="{{page.problem-alt}}" class="gallery-image" />
+  </div>
+  <h1 class="page-title">{{page.title}}</h1>
     <ul>
-        <li><span class="body-bold">deliverable:</span> {{page.deliverable}}</li>
-        <li><span class="body-bold">role:</span> {{page.role}}</li>
-        <li><span class="body-bold">methods:</span> {{page.methods}}</li>
-        <li><span class="body-bold">artifacts:</span> {{page.artifacts}}</li>
+        <li><span class="h3">deliverable:</span> {{page.deliverable}}</li>
+        <li><span class="h3">role:</span> {{page.role}}</li>
+        <li><span class="h3">methods:</span> {{page.methods}}</li>
+        <li><span class="h3">artifacts:</span> {{page.artifacts}}</li>
     </ul>
+</section>
+<section class="flex-row">
+    <h2>Problem</h2>
     <p>
       {{page.problem}}
     </p>
   </div>
 </section>
-<section class="flex-container">
-  <img src="{{page.process-img1}}" alt="page.process-txt1" />
-  <img src="{{page.process-img2}}" alt="page.process-txt2" />
-  <img src="{{page.process-img3}}" alt="page.process-txt3" />
+<section class="flex-row gallery-row">
+  <div class="gallery-container">
+    <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="gallery-image"/>
+  </div>
+  <div class="gallery-container">
+    <img src="{{page.process-img2}}" alt="page.process-txt2" class="gallery-image" />
+  </div>
+  <div class="gallery-container">
+    <img src="{{page.process-img3}}" alt="page.process-txt3" class="gallery-image" />
+  </div>
 </section>
-<section class="flex-container">
-  <h1>{{page.title}}</h1>
+<section class="flex-row">
+  <h2>{{page.title}}</h2>
   <p>
     {{content}}
   </p>
 </section>
-<section>
-  <h1>Reflection</h1>
+<section class="flex-row">
+  <h2>Reflection</h2>
   <p>
     {{page.reflection}}
   </p>
 </section>
-{% include footer.html %}
 </div>

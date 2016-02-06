@@ -20,8 +20,8 @@ var gulp          = require('gulp'),
         .pipe(cmq({beautify: false}))
         .pipe(gulp.dest('assets/css'))
         .pipe(gulp.dest('_site/assets/css'))
-        .pipe(browserSync.stream())
-    });
+        .pipe(browserSync.stream());
+      });
 
 // Run Jekyll Build Asynchronously
 gulp.task('build:jekyll', function (done) {
@@ -55,5 +55,5 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', function(){
-  gulp.start('sass', 'browser:sync', 'watch')
+  gulp.start('sass', 'browser:sync', 'watch');
 });

@@ -1,8 +1,23 @@
 /*  =============================================================================
  *  IMAGE STYLES
  *  ============================================================================= */
+.aesthetic-header {
+  background-size: 100% 100%;
+}
 
- .aesthetic-header{
-   background-image: url('../img/work/note-960.jpg');
-   background-size: 100% 100%;
- }
+.gallery-row{
+  @extend .flex-container;
+  flex-flow: row wrap;
+  padding: .5vw;
+}
+
+.gallery-container{
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+.gallery-image{
+  width: 100%;
+  height: auto;
+}

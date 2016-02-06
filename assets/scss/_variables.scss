@@ -25,4 +25,11 @@ $base-font-size: 16px;
 $grid-columns: 12;
 $grid-max-width: 90%;
 
+//image mixins
+/*NOTE: go back and make a mixin for gallery-row and flex-row! Very leaky rn*/
+@mixin fit-div{
+  height: auto;
+  width: 100%;
+}
+
 //breakpoints - need to add

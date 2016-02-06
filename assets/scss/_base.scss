@@ -42,8 +42,53 @@ nav {
    width: 100%;
  }
 
+ .horizontal-center{
+   margin: 0 auto;
+ }
+
+ .vpadding-half-rem{
+   padding: .5rem 0;
+ }
+
+ .vpadding-quarter-rem{
+   padding: .25rem 0;
+ }
+
+ .vmargin-2rem{
+   margin: 2rem 0;
+ }
+
+ .botpadding-quarter-rem{
+   padding-bottom: .25rem;
+ }
+
+ .botpadding-half-rem{
+   padding-bottom: .5rem;
+ }
+
+ .botmargin-rem{
+   margin-bottom: 1rem;
+ }
+
+ .botmargin-half-rem{
+   margin-bottom: .5rem;
+ }
+
+ .product-thumb{
+   width: 250px;
+ }
+
+ /*  =============================================================================
+  *  Grid
+  *  ============================================================================= */
 .flex-container{
   display: flex;
+}
+
+.flex-row{
+  @extend .flex-container;
+  flex-flow: column;
+  margin: .75rem 1rem;
 }
 
 .flex-jc-sb{
@@ -58,44 +103,13 @@ nav {
   align-content: center;
 }
 
+.nav-items{
+  justify-content: space-between;;
+  align-content: center;
+}
+
 .ff-column{
   flex-flow:column;
-}
-
-.horizontal-center{
-  margin: 0 auto;
-}
-
-.vpadding-half-rem{
-  padding: .5rem 0;
-}
-
-.vpadding-quarter-rem{
-  padding: .25rem 0;
-}
-
-.vmargin-2rem{
-  margin: 2rem 0;
-}
-
-.botpadding-quarter-rem{
-  padding-bottom: .25rem;
-}
-
-.botpadding-half-rem{
-  padding-bottom: .5rem;
-}
-
-.botmargin-rem{
-  margin-bottom: 1rem;
-}
-
-.botmargin-half-rem{
-  margin-bottom: .5rem;
-}
-
-.product-thumb{
-  width: 250px;
 }
 
 /*  =============================================================================
@@ -111,7 +125,19 @@ nav {
         background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
     }
 
+  .flex-row{
+    flex-flow: row wrap;
+  }
+
   .svg-line {
     display:none;
+  }
+
+  .nav-items{
+    justify-content: flex-end;
+  }
+
+  .nav-items a{
+    margin: 0 .5rem;
   }
 }
