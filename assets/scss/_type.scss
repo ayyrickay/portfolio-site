@@ -58,8 +58,12 @@ a{
     color: #fff;
   }
 
-  @media(min-width: 960px){
+  @media(min-width: $medium-breakpoint){
     .page-title{
       font-size: 5em;
+    }
+
+    .mq-text-center{
+      text-align: center;
     }
   }

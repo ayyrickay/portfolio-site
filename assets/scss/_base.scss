@@ -22,6 +22,11 @@
   width: 90%;
 }
 
+.bottom-absolute{
+  position: absolute;;
+  bottom: 0px;
+}
+
 /*  =============================================================================
  *  Default elements
  *  ============================================================================= */
@@ -87,8 +92,29 @@ nav {
 
 .flex-row{
   @extend .flex-container;
+  flex-flow: row wrap;
+  padding: .5vw;
+}
+
+.flex-row-col{
+  @extend .flex-container;
   flex-flow: column;
-  margin: .75rem 1rem;
+  padding: .5vw;
+}
+
+.flex-field{
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+.flex-image{
+  width: 100%;
+  height: auto;
+}
+
+.flex-header{
+  flex: 1 100%;
 }
 
 .flex-jc-sb{
@@ -99,13 +125,13 @@ nav {
   justify-content: center;
 }
 
-.flex-ac-center{
-  align-content: center;
+.flex-items-center{
+  align-items: center;
 }
 
 .nav-items{
   justify-content: space-between;;
-  align-content: center;
+  align-items: center;
 }
 
 .ff-column{
@@ -113,17 +139,26 @@ nav {
 }
 
 /*  =============================================================================
+ *  PARALLAX
+ *  ============================================================================= */
+#cover-photo{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+}
+#contents{
+  position: absolute;
+}
+
+/*  =============================================================================
  *  Media Queries
  *  ============================================================================= */
 
-@media(min-width: 960px){
+@media(min-width: $medium-breakpoint){
   .responsive-line{
     display: block;
   }
-
-  .skills-img {
-        background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
-    }
 
   .flex-row{
     flex-flow: row wrap;
@@ -139,5 +174,25 @@ nav {
 
   .nav-items a{
     margin: 0 .5rem;
+  }
+
+  .mq-justify-center{
+    justify-content: center;
+  }
+
+  .home-vertical-center{
+    margin: auto 0 auto 50%;
+  }
+
+  .mq-align-end{
+    align-items: flex-end;
+  }
+
+  .mq-margin-left-50{
+    margin-left: 50%;
+  }
+
+  .maxw-330px{
+    max-width: 330px;
   }
 }

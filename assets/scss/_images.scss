@@ -5,19 +5,47 @@
   background-size: 100% 100%;
 }
 
-.gallery-row{
-  @extend .flex-container;
-  flex-flow: row wrap;
-  padding: .5vw;
+.mq-vanish{
+  display: none;
 }
 
-.gallery-container{
-  flex: auto;
-  width: 200px;
-  margin: .5vw;
+/*  =============================================================================
+ *  IMAGE MEDIA QUERIES
+ *  ============================================================================= */
+@media(min-width: $medium-breakpoint){
+  .mq-vanish{
+    display: block;
+  }
+  .about-img {
+    @include home-img;
+    height: 95vh;
+    background: url("/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
+
+    }
+
+  .skills-img {
+    @include home-img;
+    background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
+
+    }
+
+  .contact-img {
+    @include home-img;
+    background: url("/img/backgrounds/contact-ipad.png") no-repeat bottom left;
+    }
+
+  .text-right{
+      width: 40%;
+      margin: 5vw;
+    }
+
 }
 
-.gallery-image{
-  width: 100%;
-  height: auto;
+@media(min-width: $large-breakpoint){
+  .about-img {
+    @include home-img;
+    background: url("/img/backgrounds/helloricky.png") no-repeat bottom left;
+    background-size: contain;
+    }
+
 }

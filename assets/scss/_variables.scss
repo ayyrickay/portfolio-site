@@ -21,6 +21,11 @@ $base-font-size: 16px;
   line-height: 1.5;
 }
 
+@mixin home-img{
+  justify-content: flex-end;
+  align-items: center;
+}
+
 //grid variables
 $grid-columns: 12;
 $grid-max-width: 90%;
@@ -33,3 +38,5 @@ $grid-max-width: 90%;
 }
 
 //breakpoints - need to add
+$medium-breakpoint: 48em;
+$large-breakpoint: 68.75em;
