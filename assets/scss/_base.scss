@@ -51,6 +51,10 @@ nav {
    margin: 0 auto;
  }
 
+ .padding-point5vw{
+   padding: .5vw;
+ }
+
  .vpadding-half-rem{
    padding: .5rem 0;
  }
@@ -111,6 +115,7 @@ nav {
 .flex-image{
   width: 100%;
   height: auto;
+  box-shadow:0 2px 2px #999;
 }
 
 .flex-header{
@@ -138,6 +143,10 @@ nav {
   flex-flow:column;
 }
 
+.maxh-85vh{
+  max-height: 85vh;
+}
+
 /*  =============================================================================
  *  PARALLAX
  *  ============================================================================= */
@@ -162,6 +171,7 @@ nav {
 
   .flex-row{
     flex-flow: row wrap;
+    min-height: 40vh;
   }
 
   .svg-line {
@@ -184,6 +194,10 @@ nav {
     margin: auto 0 auto 50%;
   }
 
+  .mq-vertical-center{
+    margin: 0 auto;
+  }
+
   .mq-align-end{
     align-items: flex-end;
   }
@@ -194,5 +208,17 @@ nav {
 
   .maxw-330px{
     max-width: 330px;
+  }
+
+  .flex-header{
+    text-align: center;
+  }
+
+  .mq-height-60vh{
+    min-height: 60vh;
+  }
+
+  .mq-neg-margin-bottom{
+    margin-bottom: -15vh;
   }
 }

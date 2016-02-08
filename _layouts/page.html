@@ -2,26 +2,34 @@
 layout: default
 css: [main]
 ---
-<section class="flex-row">
-  <div>
-    <img src="{{page.problem-img}}" alt="{{page.problem-alt}}" class="flex-image" />
-  </div>
-  <h1 class="page-title">{{page.title}}</h1>
-    <ul>
+<!--
+HEADER
+-->
+{{page.problem-img}}
+<section class="project-row">
+  <h1 class="horizontal-center">{{page.title}}</h1>
+    <ul class="maxw-330px horizontal-center">
         <li><span class="h3">deliverable:</span> {{page.deliverable}}</li>
         <li><span class="h3">role:</span> {{page.role}}</li>
         <li><span class="h3">methods:</span> {{page.methods}}</li>
         <li><span class="h3">artifacts:</span> {{page.artifacts}}</li>
     </ul>
 </section>
-<section class="flex-row">
-    <h2>Problem</h2>
-    <p>
+
+<!--
+PROBLEM
+-->
+<section class="project-row">
+    <h2 class="maxw-330px horizontal-center">Problem</h2>
+    <p class="maxw-330px horizontal-center">
       {{page.problem}}
     </p>
-  </div>
 </section>
-<section class="flex-row">
+
+<!--
+PROJECT IMAGES
+-->
+<section class="flex-row vmargin-2rem">
   <div class="flex-field">
     <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image"/>
   </div>
@@ -32,15 +40,23 @@ css: [main]
     <img src="{{page.process-img3}}" alt="page.process-txt3" class="flex-image" />
   </div>
 </section>
-<section class="flex-row">
-  <h2>{{page.title}}</h2>
-  <p>
+
+<!--
+ACTION
+-->
+<section class="project-row">
+  <h2 class="maxw-330px horizontal-center">{{page.title}}</h2>
+  <p class="maxw-330px horizontal-center">
     {{content}}
   </p>
 </section>
-<section class="flex-row">
-  <h2>Reflection</h2>
-  <p>
+
+<!--
+REFLECTION
+-->
+<section class="project-row">
+  <h2 class="maxw-330px horizontal-center">Reflection</h2>
+  <p class="maxw-330px horizontal-center">
     {{page.reflection}}
   </p>
 </section>

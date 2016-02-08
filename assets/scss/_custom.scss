@@ -10,3 +10,8 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+.project-row{
+  @extend .width-100pct;
+  margin: 2vh 1vh;
+}

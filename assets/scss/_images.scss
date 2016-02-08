@@ -1,13 +1,22 @@
 /*  =============================================================================
  *  IMAGE STYLES
  *  ============================================================================= */
-.aesthetic-header {
-  background-size: 100% 100%;
-}
 
 .mq-vanish{
   display: none;
 }
+
+.title-img{
+  height: 40vh;
+  width: auto;
+}
+
+.aesthetic-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/img/notes/notes-header.png") no-repeat center center;
+  background-size: contain;
+  }
 
 /*  =============================================================================
  *  IMAGE MEDIA QUERIES
@@ -18,20 +27,10 @@
   }
   .about-img {
     @include home-img;
-    height: 95vh;
+    height: 93vh;
     background: url("/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
-
-    }
-
-  .skills-img {
-    @include home-img;
-    background: url("/img/backgrounds/rickystylus-ipad.png") no-repeat bottom left;
-
-    }
-
-  .contact-img {
-    @include home-img;
-    background: url("/img/backgrounds/contact-ipad.png") no-repeat bottom left;
+    background-size: contain;
+    border-bottom: 1px solid #9D9390;
     }
 
   .text-right{
@@ -39,6 +38,14 @@
       margin: 5vw;
     }
 
+    .skills-field{
+      margin-top: -13vh;
+    }
+
+    .skills-field > *{
+      text-align: center;
+      margin: 0 auto;
+    }
 }
 
 @media(min-width: $large-breakpoint){

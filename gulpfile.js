@@ -50,6 +50,7 @@ gulp.task('watch', function(){
   gulp.watch(['index.html',
               '_includes/*.html',
               '_layouts/*.html',
+              'work/*/*.html',
               '*.md'],
               ['jekyll-rebuild']);
 });
