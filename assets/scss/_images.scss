@@ -11,10 +11,28 @@
   width: auto;
 }
 
+
+/*  =============================================================================
+ *  PROJECT HEADERS
+ *  ============================================================================= */
+.crisco-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/img/crisco/crisco-header.png") no-repeat center center;
+  background-size: contain;
+  }
+
 .aesthetic-header {
   @include home-img;
   height: 40vh;
   background: url("/img/notes/notes-header.png") no-repeat center center;
+  background-size: contain;
+  }
+
+.nickvision-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/img/nickvision/nickvision-header.png") no-repeat center center;
   background-size: contain;
   }
 

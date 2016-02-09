@@ -20,12 +20,12 @@ html{
   font-size: 4.236rem;
 
   text-transform: uppercase;
-  text-align: center;
 }
 
 h2, .h2{
   @include heading-font;
   font-size: 2.618rem;
+  letter-spacing: .05rem;
 }
 
 h3, .h3{
@@ -36,6 +36,7 @@ h3, .h3{
 
 p, li, dt{
   @include body-copy;
+  line-height: 1.4;
 }
 
 a{
@@ -69,12 +70,9 @@ a{
     }
   }
 
-  @media(min-width: $large-breakpoint){
-    .page-title, h1{
-      font-size: 6em;
-    }
+    @media(min-width: $xlarge-breakpoint){
+      html{
+        font-size: 18px;
+      }
 
-    .mq-text-center{
-      text-align: center;
-    }
   }

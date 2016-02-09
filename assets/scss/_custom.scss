@@ -13,5 +13,18 @@
 
 .project-row{
   @extend .width-100pct;
-  margin: 2vh 1vh;
+  padding: 2vh 1vh;
+}
+
+.project-row h2{
+  margin-bottom: .5rem;
+}
+
+.greyscale{
+  filter: grayscale(.90);
+  transition: .5s;
+}
+
+.greyscale:hover{
+  filter: none;
 }

@@ -5,6 +5,9 @@
  /*  =============================================================================
   *  Useful Miscellany
   *  ============================================================================= */
+html{
+  background-color: #f2f2f2;
+}
 .vanish{
   display: none;
   visibility: hidden;
@@ -27,6 +30,10 @@
   bottom: 0px;
 }
 
+.box-shadow{
+  box-shadow:0 2px 2px #999;
+}
+
 /*  =============================================================================
  *  Default elements
  *  ============================================================================= */
@@ -44,7 +51,7 @@ nav {
  }
 
  .width-100pct{
-   width: 100%;
+   width: 99%;
  }
 
  .horizontal-center{
@@ -97,7 +104,6 @@ nav {
 .flex-row{
   @extend .flex-container;
   flex-flow: row wrap;
-  padding: .5vw;
 }
 
 .flex-row-col{
@@ -115,7 +121,6 @@ nav {
 .flex-image{
   width: 100%;
   height: auto;
-  box-shadow:0 2px 2px #999;
 }
 
 .flex-header{
@@ -148,19 +153,6 @@ nav {
 }
 
 /*  =============================================================================
- *  PARALLAX
- *  ============================================================================= */
-#cover-photo{
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: -100;
-}
-#contents{
-  position: absolute;
-}
-
-/*  =============================================================================
  *  Media Queries
  *  ============================================================================= */
 
@@ -171,7 +163,6 @@ nav {
 
   .flex-row{
     flex-flow: row wrap;
-    min-height: 40vh;
   }
 
   .svg-line {
@@ -194,7 +185,7 @@ nav {
     margin: auto 0 auto 50%;
   }
 
-  .mq-vertical-center{
+  .mq-horizontal-center{
     margin: 0 auto;
   }
 
@@ -206,8 +197,12 @@ nav {
     margin-left: 50%;
   }
 
-  .maxw-330px{
-    max-width: 330px;
+  .mq-height-50vh{
+    height: 50vh;
+  }
+
+  .contain-text{
+    max-width: 30vw;
   }
 
   .flex-header{

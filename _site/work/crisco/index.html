@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
 
-    <title>Crisco</title>
+    <title>Crisco URL Shortener</title>
     <meta name="description" content="A user-focused designer interested in all things front-end, with a focus on development and visual design that's with people, for people.
 ">
     <meta name="keywords" content="ricky, holtz, portfolio, design, technology, information, ux, ui, front-end">
@@ -28,9 +28,9 @@
   <nav role="navigation" class="page-margin flex-container nav-items">
     <h1 class="vanish">Navigation</h1>
     <a href='http://rickydesign.me'>Home</a>
-    <a href='#skills'>Skills</a>
-    <a href='#projects'>Projects</a>
-    <a href='#contact'>Contact</a>
+    <a href='http://rickydesign.me#skills'>Skills</a>
+    <a href='http://rickydesign.me#projects'>Projects</a>
+    <a href='http://rickydesign.me#contact'>Contact</a>
   </nav>
 </header>
 
@@ -38,13 +38,13 @@
       <!--
 HEADER
 -->
-
+<div class='crisco-header' title='a laptop screen with a bright blue background and red text'></div>
 <section class="project-row">
-  <h1 class="horizontal-center">Crisco</h1>
-    <ul class="maxw-330px horizontal-center">
+  <h1 class="horizontal-center contain-text">Crisco URL Shortener</h1>
+    <ul class="contain-text horizontal-center">
         <li><span class="h3">deliverable:</span> <a href="http://people.ischool.berkeley.edu/~ricky.holtz/server/crisco" target="_blank">url shortener website</a></li>
         <li><span class="h3">role:</span> front-end developer</li>
-        <li><span class="h3">methods:</span> web development: flask, sqlite, bootstrap</li>
+        <li><span class="h3">methods:</span> HTML/CSS, javascript, flask, sqlite, bootstrap</li>
         <li><span class="h3">artifacts:</span> <a href="/img/assets/Crisco_TechnicalReport.pdf" target="_blank">technical report</a></li>
     </ul>
 </section>
@@ -53,9 +53,9 @@ HEADER
 PROBLEM
 -->
 <section class="project-row">
-    <h2 class="maxw-330px horizontal-center">Problem</h2>
-    <p class="maxw-330px horizontal-center">
-      how the heck does a url shortener work?
+    <h2 class="contain-text horizontal-center">Problem</h2>
+    <p class="contain-text horizontal-center">
+      A url shortener is pretty straightforward when you're using it - but building it is another issue entirely. For this project, my friend and I wanted to explore servers, databases, and front-end web development... And we wanted to have a bit of fun with it.
     </p>
 </section>
 
@@ -64,13 +64,13 @@ PROJECT IMAGES
 -->
 <section class="flex-row vmargin-2rem">
   <div class="flex-field">
-    <img src="" alt="" class="flex-image"/>
+    <img src="/img/crisco/crisco-2.png" alt="" class="flex-image"/>
   </div>
   <div class="flex-field">
-    <img src="" alt="page.process-txt2" class="flex-image" />
+    <img src="/img/crisco/crisco-4.png" alt="page.process-txt2" class="flex-image" />
   </div>
   <div class="flex-field">
-    <img src="" alt="page.process-txt3" class="flex-image" />
+    <img src="/img/crisco/crisco-3.png" alt="page.process-txt3" class="flex-image" />
   </div>
 </section>
 
@@ -78,19 +78,9 @@ PROJECT IMAGES
 ACTION
 -->
 <section class="project-row">
-  <h2 class="maxw-330px horizontal-center">Crisco</h2>
-  <p class="maxw-330px horizontal-center">
-    <div class="slick-carousel">
-    
-        <div><img src="/img/crisco/crisco-1.png" alt="crisco url shortener assets"></div>
-    
-        <div><img src="/img/crisco/crisco-2.png" alt="crisco url shortener assets"></div>
-    
-        <div><img src="/img/crisco/crisco-3.png" alt="crisco url shortener assets"></div>
-    
-        <div><img src="/img/crisco/crisco-4.png" alt="crisco url shortener assets"></div>
-    
-</div>
+  <h2 class="contain-text horizontal-center">Crisco URL Shortener</h2>
+  <p class="contain-text horizontal-center">
+    Crisco focused more on technical aspects than aesthetics. My classmate and I built a simple server which received POST requests from user input and fetched appropriate pages using Python's Flask library. It stored inputs in a simple binary database. Once we had an MVP, we added a couple of features, including a random URL generator (rather than requiring a tag), and a dupe-free tag system that generated or fetched a unique random URL for a given link. We upgraded our database to a more robust and secure SQLite tool, and made the site responsive. We also tried to keep the project lighthearted, and went with the southern theme and a 404 page that we found pretty delightful.
 
   </p>
 </section>
@@ -99,9 +89,9 @@ ACTION
 REFLECTION
 -->
 <section class="project-row">
-  <h2 class="maxw-330px horizontal-center">Reflection</h2>
-  <p class="maxw-330px horizontal-center">
-    
+  <h2 class="contain-text horizontal-center">Reflection</h2>
+  <p class="contain-text horizontal-center">
+    My front-end development skills and graphic design sensibilites have grown significantly since I finished this project. Still, it taught me all about the web stack, and although I'm typically spinning up servers in Node.js rather than Python these days, the fundamentals all happened in this project. Perhaps most importantly, this project really developed my love of front-end development - I just needed a chance to dive in.
   </p>
 </section>
 </div>
