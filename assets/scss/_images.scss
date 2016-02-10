@@ -18,21 +18,21 @@
 .crisco-header {
   @include home-img;
   height: 40vh;
-  background: url("/img/crisco/crisco-header.png") no-repeat center center;
+  background: url("/assets/img/crisco/crisco-header.png") no-repeat center center;
   background-size: contain;
   }
 
 .aesthetic-header {
   @include home-img;
   height: 40vh;
-  background: url("/img/notes/notes-header.png") no-repeat center center;
+  background: url("/assets/img/notes/notes-header.png") no-repeat center center;
   background-size: contain;
   }
 
 .nickvision-header {
   @include home-img;
   height: 40vh;
-  background: url("/img/nickvision/nickvision-header.png") no-repeat center center;
+  background: url("/assets/img/nickvision/nickvision-header.png") no-repeat center center;
   background-size: contain;
   }
 
@@ -46,7 +46,7 @@
   .about-img {
     @include home-img;
     height: 93vh;
-    background: url("/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
+    background: url("/assets/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
     background-size: contain;
     border-bottom: 1px solid #9D9390;
     }
@@ -69,7 +69,7 @@
 @media(min-width: $large-breakpoint){
   .about-img {
     @include home-img;
-    background: url("/img/backgrounds/helloricky.png") no-repeat bottom left;
+    background: url("/assets/img/backgrounds/helloricky.png") no-repeat bottom left;
     background-size: contain;
     }
 
