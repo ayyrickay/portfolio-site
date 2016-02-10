@@ -1,0 +1,43 @@
+/*  =============================================================================
+ *  variables
+ *  ============================================================================= */
+
+
+//typography variables && mixins
+$base-font-style: "acumin-pro", "helvetica neue", "helvetica", "arial", sans-serif;
+$base-font-weight: 300;
+$base-font-size: 16px;
+
+@mixin heading-font {
+  font-family: "Bookmania", Georgia, Times, serif;
+  font-weight: 600;
+  font-style: italic;
+
+  text-transform: lowercase;
+}
+
+@mixin body-copy{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@mixin home-img{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+//grid variables
+$grid-columns: 12;
+$grid-max-width: 90%;
+
+//image mixins
+/*NOTE: go back and make a mixin for gallery-row and flex-row! Very leaky rn*/
+@mixin fit-div{
+  height: auto;
+  width: 100%;
+}
+
+//breakpoints
+$medium-breakpoint: 48rem;
+$large-breakpoint: 68.75rem;
+$xlarge-breakpoint: 90rem

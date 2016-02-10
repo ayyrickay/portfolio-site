@@ -1,9 +1,10 @@
-<footer>
-    <!-- loading jQuery and scripts -->
-    {%if page.js %}
-        {% for script in page.js %}
-    <script type="text/javascript" src="/js/{{script}}.js"></script>
-        {% endfor %}
-    {% endif %}
-        <p>&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script>. ricky holtz.</p>
+<footer class="flex-container width-100pct botpadding-half-rem">
+  <!-- loading jQuery and scripts -->
+  {%if page.js %} {% for script in page.js %}
+  <script type="text/javascript" src="/assets/js/{{script}}.js"></script>
+  {% endfor %} {% endif %}
+  <p class="horizontal-center">ricky holtz.
+    <script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>.</p>
 </footer>

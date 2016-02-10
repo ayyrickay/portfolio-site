@@ -1,0 +1,220 @@
+/*  =============================================================================
+ *  BASE STYLES
+ *  ============================================================================= */
+
+ /*  =============================================================================
+  *  Useful Miscellany
+  *  ============================================================================= */
+html{
+  background-color: #f2f2f2;
+}
+
+.vanish{
+  display: none;
+  visibility: hidden;
+}
+
+.responsive-line{
+  display: inline;
+}
+
+.content-group{
+  margin: 2rem auto;
+}
+
+.page-margin{
+  width: 90%;
+}
+
+.bottom-absolute{
+  position: absolute;;
+  bottom: 0px;
+}
+
+.box-shadow{
+  box-shadow:0 2px 2px #999;
+}
+
+/*  =============================================================================
+ *  Default elements
+ *  ============================================================================= */
+nav {
+  padding: 1.5rem 0 1rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*  =============================================================================
+ *  Layout
+ *  ============================================================================= */
+ .width-90pct{
+   width: 90%;
+ }
+
+ .width-100pct{
+   width: 99%;
+ }
+
+ .horizontal-center{
+   margin: 0 auto;
+ }
+
+ .padding-point5vw{
+   padding: .5vw;
+ }
+
+ .vpadding-half-rem{
+   padding: .5rem 0;
+ }
+
+ .vpadding-quarter-rem{
+   padding: .25rem 0;
+ }
+
+ .vmargin-2rem{
+   margin: 2rem 0;
+ }
+
+ .botpadding-quarter-rem{
+   padding-bottom: .25rem;
+ }
+
+ .botpadding-half-rem{
+   padding-bottom: .5rem;
+ }
+
+ .botmargin-rem{
+   margin-bottom: 1rem;
+ }
+
+ .botmargin-half-rem{
+   margin-bottom: .5rem;
+ }
+
+ .product-thumb{
+   width: 250px;
+ }
+
+ /*  =============================================================================
+  *  Grid
+  *  ============================================================================= */
+.flex-container{
+  display: flex;
+}
+
+.flex-row{
+  @extend .flex-container;
+  flex-flow: row wrap;
+}
+
+.flex-row-col{
+  @extend .flex-container;
+  flex-flow: column;
+  padding: .5vw;
+}
+
+.flex-field{
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+.flex-image{
+  width: 100%;
+  height: auto;
+}
+
+.flex-header{
+  flex: 1 100%;
+}
+
+.flex-jc-sb{
+  justify-content: space-between;
+}
+
+.flex-jc-center{
+  justify-content: center;
+}
+
+.flex-items-center{
+  align-items: center;
+}
+
+.nav-items{
+  justify-content: space-between;;
+  align-items: center;
+}
+
+.ff-column{
+  flex-flow:column;
+}
+
+.maxh-85vh{
+  max-height: 85vh;
+}
+
+/*  =============================================================================
+ *  Media Queries
+ *  ============================================================================= */
+
+@media(min-width: $medium-breakpoint){
+  .responsive-line{
+    display: block;
+  }
+
+  .flex-row{
+    flex-flow: row wrap;
+  }
+
+  .svg-line {
+    display:none;
+  }
+
+  .nav-items{
+    justify-content: flex-end;
+  }
+
+  .nav-items a{
+    margin: 0 .5rem;
+  }
+
+  .mq-justify-center{
+    justify-content: center;
+  }
+
+  .home-vertical-center{
+    margin: auto 0 auto 50%;
+  }
+
+  .mq-horizontal-center{
+    margin: 0 auto;
+  }
+
+  .mq-align-end{
+    align-items: flex-end;
+  }
+
+  .mq-margin-left-50{
+    margin-left: 50%;
+  }
+
+  .mq-height-50vh{
+    height: 50vh;
+  }
+
+  .contain-text{
+    max-width: 30vw;
+  }
+
+  .flex-header{
+    text-align: center;
+  }
+
+  .mq-height-60vh{
+    min-height: 60vh;
+  }
+
+  .mq-neg-margin-bottom{
+    margin-bottom: -15vh;
+  }
+}

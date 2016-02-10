@@ -1,28 +1,63 @@
 ---
 layout: default
-css: [main, page, slick-theme, slick]
-js: [jQuery, slick.min, customSlick]
+css: [main]
 ---
-<div id="work-container">
-    <header>
-        <a href="/"><h2>rickydesign.me</h2></a>
-    <nav role="navigation"><a href="/">home</a> | <a href="/#skills">about</a> | <a href="/#work">work</a> | <a href="/#contact">contact</a></nav>
-    </header>
-    <div class="left-bound share-col">
+<!--
+HEADER
+-->
+{{page.problem-img}}
+<section class="project-row">
+  <h1 class="horizontal-center contain-text">{{page.title}}</h1>
+    <ul class="contain-text horizontal-center">
+        <li><span class="h3">deliverable:</span> {{page.deliverable}}</li>
+        <li><span class="h3">role:</span> {{page.role}}</li>
+        <li><span class="h3">methods:</span> {{page.methods}}</li>
+        <li><span class="h3">artifacts:</span> {{page.artifacts}}</li>
+    </ul>
+</section>
+
+<!--
+PROBLEM
+-->
+<section class="project-row">
+    <h2 class="contain-text horizontal-center">Problem</h2>
+    <p class="contain-text horizontal-center">
+      {{page.problem}}
+    </p>
+</section>
+
+<!--
+PROJECT IMAGES
+-->
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image"/>
+  </div>
+  <div class="flex-field">
+    <img src="{{page.process-img2}}" alt="page.process-txt2" class="flex-image" />
+  </div>
+  <div class="flex-field">
+    <img src="{{page.process-img3}}" alt="page.process-txt3" class="flex-image" />
+  </div>
+</section>
+
+<!--
+ACTION
+-->
+<section class="project-row">
+  <h2 class="contain-text horizontal-center">{{page.title}}</h2>
+  <p class="contain-text horizontal-center">
     {{content}}
-    </div>
-    <div class="work-text share-col">
-        <h1>{{page.title}}</h1>
-            <ul>
-                <li><span style="font-weight: 700">deliverable:</span> {{page.deliverable}}</li>
-                <li><span style="font-weight: 700">role:</span> {{page.role}}</li>
-                <li><span style="font-weight: 700">problem:</span> {{page.problem}}</li>
-                <li><span style="font-weight: 700">methods:</span> {{page.methods}}</li>
-                <li><span style="font-weight: 700">artifacts:</span> {{page.artifacts}}</li>
-            </ul>
-        <hr>
-        <h2>Solution:</h2>
-        <p>{{page.solution}}</p>
-    </div>
-        {% include footer.html %}
+  </p>
+</section>
+
+<!--
+REFLECTION
+-->
+<section class="project-row">
+  <h2 class="contain-text horizontal-center">Reflection</h2>
+  <p class="contain-text horizontal-center">
+    {{page.reflection}}
+  </p>
+</section>
 </div>

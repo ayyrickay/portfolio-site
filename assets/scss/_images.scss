@@ -1,0 +1,76 @@
+/*  =============================================================================
+ *  IMAGE STYLES
+ *  ============================================================================= */
+
+.mq-vanish{
+  display: none;
+}
+
+.title-img{
+  height: 40vh;
+  width: auto;
+}
+
+
+/*  =============================================================================
+ *  PROJECT HEADERS
+ *  ============================================================================= */
+.crisco-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/assets/img/crisco/crisco-header.png") no-repeat center center;
+  background-size: contain;
+  }
+
+.aesthetic-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/assets/img/notes/notes-header.png") no-repeat center center;
+  background-size: contain;
+  }
+
+.nickvision-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/assets/img/nickvision/nickvision-header.png") no-repeat center center;
+  background-size: contain;
+  }
+
+/*  =============================================================================
+ *  IMAGE MEDIA QUERIES
+ *  ============================================================================= */
+@media(min-width: $medium-breakpoint){
+  .mq-vanish{
+    display: block;
+  }
+  .about-img {
+    @include home-img;
+    height: 93vh;
+    background: url("/assets/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
+    background-size: contain;
+    border-bottom: 1px solid #9D9390;
+    }
+
+  .text-right{
+      width: 40%;
+      margin: 5vw;
+    }
+
+    .skills-field{
+      margin-top: -13vh;
+    }
+
+    .skills-field > *{
+      text-align: center;
+      margin: 0 auto;
+    }
+}
+
+@media(min-width: $large-breakpoint){
+  .about-img {
+    @include home-img;
+    background: url("/assets/img/backgrounds/helloricky.png") no-repeat bottom left;
+    background-size: contain;
+    }
+
+}

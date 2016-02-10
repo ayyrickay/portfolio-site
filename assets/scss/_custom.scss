@@ -1,0 +1,30 @@
+/*  =============================================================================
+ *  CUSTOM STYLES
+ *  ============================================================================= */
+
+.work-header{
+  height: 368px;
+}
+
+.work-title{
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.project-row{
+  @extend .width-100pct;
+  padding: 2vh 1vh;
+}
+
+.project-row h2{
+  margin-bottom: .5rem;
+}
+
+.greyscale{
+  filter: grayscale(.90);
+  transition: .5s;
+}
+
+.greyscale:hover{
+  filter: none;
+}
