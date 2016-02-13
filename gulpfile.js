@@ -4,8 +4,7 @@
 var gulp          = require('gulp'),
     gutil         = require('gulp-util'),
     sass          = require('gulp-sass'),
-    uncss         = require('gulp-uncss'),
-    imageop       =require('gulp-image-optimization'),
+    imageop       = require('gulp-image-optimization'),
     cp            = require('child_process'),
     plumber       = require('gulp-plumber'),
     autoprefixer  = require('gulp-autoprefixer'),
@@ -21,9 +20,6 @@ gulp.task('sass', function(done) {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cmq({beautify: false}))
-    .pipe(uncss({
-      html: ['index.html', 'work/**/*.html', 'http://rickydesign.me']
-    }))
     .pipe(gulp.dest('assets/css'))
     .pipe(gulp.dest('_site/assets/css'))
     .pipe(browserSync.stream());
@@ -70,5 +66,5 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', function(){
-  gulp.start('sass', 'images', 'browser:sync', 'watch');
+  gulp.start('sass', 'browser:sync', 'watch');
 });
