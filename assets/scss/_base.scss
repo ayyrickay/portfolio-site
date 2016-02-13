@@ -105,6 +105,7 @@ nav {
 .flex-row{
   @extend .flex-container;
   flex-flow: row wrap;
+  margin: 5vh 5vw;
 }
 
 .flex-row-col{
@@ -126,13 +127,14 @@ nav {
 
 .flex-header{
   flex: 1 100%;
+  text-align: center;
 }
 
 .flex-jc-sb{
   justify-content: space-between;
 }
 
-.flex-jc-center{
+.justify-center{
   justify-content: center;
 }
 
@@ -204,10 +206,6 @@ nav {
 
   .contain-text{
     max-width: 30vw;
-  }
-
-  .flex-header{
-    text-align: center;
   }
 
   .mq-height-60vh{
