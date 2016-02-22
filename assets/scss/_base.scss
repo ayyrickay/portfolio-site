@@ -87,6 +87,10 @@ nav {
    padding-bottom: .5rem;
  }
 
+ .botpadding-rem{
+   padding-bottom: 1rem;
+ }
+
  .botmargin-rem{
    margin-bottom: 1rem;
  }
@@ -144,6 +148,10 @@ nav {
 
 .flex-items-center{
   align-items: center;
+}
+
+.align-items-baseline{
+  align-items: baseline;
 }
 
 .nav-items{
@@ -218,5 +226,9 @@ nav {
 
   .mq-neg-margin-bottom{
     margin-bottom: -15vh;
+  }
+
+  .mq-pad-bottom-half-rem{
+    padding-bottom: .5rem;
   }
 }
