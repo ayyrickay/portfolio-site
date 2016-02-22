@@ -1,9 +1,13 @@
 <header class="site-header">
   <nav role="navigation" class="page-margin flex-container nav-items">
-    <h1 class="vanish">Navigation</h1>
-    <a href='{{site.url}}'>Home</a>
-    <a href='{{site.url}}#skills'>Skills</a>
-    <a href='{{site.url}}#projects'>Projects</a>
-    <a href='{{site.url}}#contact'>Contact</a>
+    {% if page.path contains 'work' %}
+    <h1 class="header-title">Ricky Holtz</h1>
+    {% endif %}
+    <ul class="flex-container nav-items">
+    <li><h1 class="vanish">Navigation</h1></li>
+    <li><a href='{{site.url}}'>Home</a></li>
+    <li><a href='{{site.url}}#skills'>Skills</a></li>
+    <li><a href='{{site.url}}#projects'>Projects</a></li>
+    <li><a href='{{site.url}}#contact'>Contact</a></li>
   </nav>
 </header>
