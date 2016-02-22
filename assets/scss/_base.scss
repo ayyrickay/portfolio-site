@@ -155,7 +155,7 @@ nav {
 }
 
 .nav-items{
-  justify-content: space-between;;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -223,6 +223,10 @@ nav {
 
   .mq-height-60vh{
     min-height: 60vh;
+  }
+
+  .mq-flex-jc-end{
+    justify-content: flex-end;
   }
 
   .mq-neg-margin-bottom{

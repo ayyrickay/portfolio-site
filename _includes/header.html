@@ -1,7 +1,9 @@
 <header class="site-header">
-  <nav role="navigation" class=".mq-width-90 flex-container nav-items">
     {% if page.path contains 'work' %}
+    <nav role="navigation" class=".mq-width-90 flex-container nav-items flex-jc-sb">
     <a href='{{site.url}}'><h1 class="header-title mq-vanish">Ricky Holtz</h1></a>
+    {% else %}
+    <nav role="navigation" class=".mq-width-90 flex-container mq-flex-jc-end">
     {% endif %}
     <ul class="flex-container nav-items page-margin">
     <li><h1 class="vanish">Navigation</h1></li>
