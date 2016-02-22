@@ -185,7 +185,8 @@ nav {
   }
 
   .nav-items{
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .nav-items a{
@@ -230,5 +231,13 @@ nav {
 
   .mq-pad-bottom-half-rem{
     padding-bottom: .5rem;
+  }
+
+  .page-margin{
+    width: auto;
+  }
+
+  .mq-width-90{
+    width: 90%;
   }
 }
