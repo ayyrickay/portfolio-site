@@ -44,6 +44,26 @@ nav {
   margin: 0 auto;
 }
 
+dt {
+   float:left;
+   clear:left;
+   text-align:right;
+   margin-bottom: .5em;
+   width:25%;
+}
+
+dd {
+   float:left;
+   margin-left:1em;
+   margin-bottom: .5em;
+   padding-top: 5px;
+   max-width: 65%;
+}
+
+dd a{
+  padding-top: 2px;
+}
+
 /*  =============================================================================
  *  Layout
  *  ============================================================================= */
@@ -125,6 +145,7 @@ nav {
 .flex-field{
   flex: auto;
   width: 200px;
+  min-width: 25%;
   margin: .5vw;
 }
 
@@ -136,6 +157,7 @@ nav {
 .flex-header{
   flex: 1 100%;
   text-align: center;
+  padding-bottom: 3vh;
 }
 
 .flex-jc-sb{
