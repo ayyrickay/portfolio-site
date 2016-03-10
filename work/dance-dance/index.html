@@ -1,0 +1,20 @@
+---
+layout: page
+title: "dance dance"
+deliverable: "smart sweater"
+role: "developer and chief textile officer"
+methods: "sketching, prototyping, drilling, embedded systems, web development"
+artifacts: '<a href="https://github.com/ayyrickay/dance-dance">github repo</a>'
+problem-img: "<div class='dance-dance-header' title='a long exposure photograph that shows bands of bright color spread across space in big, dramatic swirls'></div>"
+problem: "Lights on the body aren’t novel in and of themselves. Especially in the realm of competitive dancing, costumes often involve bright lights that capture the line of the individual’s body in complete darkness. While this is an impressive effect, these lights are for the purpose of choreography - they are a part of a production. My team and I were interested in exploring the intersection between technology, fashion, and the body. We went ahead and built a sweater that listens to accelerometer data publishes it through lights on the sleeve, and a pub-sub system - so that we could build apps on top of the sweater's data! Oh and once we built the sweater, we became very interested in taking lots of long exposure photos... (:"
+process-img1: "/assets/img/dance-dance/turtle-finished.png"
+process-txt1: "'the turtle', a box containing the arduino and a dangling accelerometer. It attaches to the back of the sweater, with power stored in the pocket"
+process-img2: "/assets/img/dance-dance/octo-arms.png"
+process-txt2: "a regular capture of the sweater in the dark. you can see the led strip curving along the arm"
+process-img3: "/assets/img/dance-dance/ricky2.png"
+process-txt3: "this is one of my long exposures, and it shows how the led changes color based on speed - the brighter hues show faster motion"
+reflection: "Our team honestly thought that we were just making something that was useless but shiny and fun. But when we put the sweater on, it was a pretty transformative experience. Dancing with your arms lighting up changes your relationship with them. We suddenly lost a lot of apprehension about our bodies, and we started exploring space in a really arm-filled way. As we talked to more people about it, we started to realize that we'd built something with some awesome applications. For example, it could be a great physical therapy tool, motivating patients to move while providing useful data for doctors who can start measuring patient success. Dance dance was an important reminder that having fun can pay off in a huge way."
+---
+We started off by planning the project architecture. Basically, we wanted to build a garment that would be a platform, and then we wanted to build at least two simple apps on top of it. We played with a few ideas for garments (including a tutu), but eventually settled on a sweater since... Well, to be honest, since we had one laying around. We also decided to make a jellyfish animation, which would show the accelerometer data in a completely abstract manner, and then a more concrete calorie counting app that could turn the sweater into a practical tool.
+
+From there, we followed a straightforward process in terms of software development: we connected each component of the system (WiFi/PubNub, accelerometer, LED lights) and ensured that they worked independently. Then, we were able to split up; I mostly worked in Node.js getting PubNub (a publisher-subscriber API) to play nicely with all of our systems. From there, I helped plan out the sweater - which ended up being a surprisingly complex garment. We had a battery in the pocket that threaded back to the 'turtle', a box that held an Arduino, a wifi shield, and a bunch of padding to make sure that nothing broke... But also didn't catch on fire. Finally, we had to thread wires up to the LEDs, and sew the LEDs onto the sweater.

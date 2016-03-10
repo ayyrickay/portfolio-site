@@ -19,16 +19,18 @@
  	animation-duration: 1s;
  }
 
- /*  =============================================================================
-  *  WORK PAGE ANIMATIONS
-  *  ============================================================================= */
+/*  =============================================================================
+ *  WORK PAGE ANIMATIONS
+ *  ============================================================================= */
+@media(min-width: $medium-breakpoint){
 
- .work__image:hover { //increase the size of the image
-    position:relative;
-    top:-25px;
-    left:-35px;
-    width:500px;
-    height:auto;
-    display:block;
-    z-index:999;
+   .work__image:hover { //increase the size of the image
+      position:relative;
+      top:-25px;
+      left:-35px;
+      width:500px;
+      height:auto;
+      display:block;
+      z-index:999;
+  }
 }

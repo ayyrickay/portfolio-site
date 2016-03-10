@@ -53,8 +53,8 @@ HEADER
       <dt class="h3">role:</dt>
       <dd>front-end developer</dd>
       <dt class="h3">methods:</dt>
-      <dd>HTML/CSS, javascript, flask, sqlite, bootstrap</dd>
-      <dt class="h3">articles:</dt>
+      <dd>html, css, javascript, flask, sqlite, bootstrap</dd>
+      <dt class="h3">artifacts:</dt>
       <dd><a href="/assets/documentation/Crisco_TechnicalReport.pdf" target="_blank">technical report</a></dd>
     </dl>
   </div>
@@ -86,15 +86,24 @@ PROBLEM
 PROJECT IMAGES
 -->
 <section class="flex-row vmargin-2rem">
-  <div class="flex-field">
+  <figure class="flex-field">
     <img src="/assets/img/crisco/crisco-2.png" alt="" class="flex-image work__image" />
-  </div>
-  <div class="flex-field">
+    <figcaption class="text-center width-90pct horizontal-center">
+      
+    </figcaption>
+  </figure>
+  <figure class="flex-field">
     <img src="/assets/img/crisco/crisco-4.png" alt="page.process-txt2" class="flex-image work__image" />
-  </div>
-  <div class="flex-field">
+    <figcaption class="text-center width-90pct horizontal-center">
+      a wireframe with a higher fidelity mockup beside it
+    </figcaption>
+  </figure>
+  <figure class="flex-field">
     <img src="/assets/img/crisco/crisco-3.png" alt="page.process-txt3" class="flex-image work__image" />
-  </div>
+    <figcaption class="text-center width-90pct horizontal-center">
+      
+    </figcaption>
+  </figure>
 </section>
 
 <!--
@@ -106,7 +115,7 @@ ACTION
   </div>
   <div class="flex-field">
     <p class="contain-text">
-      Crisco focused more on technical aspects than aesthetics. My classmate and I built a simple server which received POST requests from user input and fetched appropriate pages using Python's Flask library. It stored inputs in a simple binary database. Once we had an MVP, we added a couple of features, including a random URL generator (rather than requiring a tag), and a dupe-free tag system that generated or fetched a unique random URL for a given link. We upgraded our database to a more robust and secure SQLite tool, and made the site responsive. We also tried to keep the project lighthearted, and went with the southern theme and a 404 page that we found pretty delightful.
+      My classmate and I started out by planning what this system would do. We knew our architecture, but we took some time to plan out exactly what data we would be passing around, and making calls on edge cases (e.g., duplicate urls, form defaults, etc) so that, when we started building, we could just dive right into implementation. Once the planning was done, the system was pretty straightforward; we built an HTTP server using Python's Flask library. The server accepted GET requests for web pages, of course, and POST requests for adding short url codes in a simple binary database. With this work flow established, it was easy to instruct the server to redirect; codes from the end of the URI were run against the database, and the server would then redirect people using the standard HTTP 300 code (keeping our service RESTful, of course). Once we had the MVP, we added a couple of neat features, like a random URL generator. Rather than requiring users to input a code, they could leave the field empty and get a shortened URL. We also took some strong stances on duplicate tags. If the URL was already tied to a randomized tag, we would serve the same tag rather than generating a new one and cluttering the database. We also upgraded our database to SQLite, shielding it against SQL injections - and, just for our own sanity, we made a command-line-readable table of the database contents for easy debugging in early stages. Finally, we made the whole site responsive on mobile devices. We also tried to keep the project lighthearted, and went with a southern theme ('that dog don't hunt', the copy on our error page, is a mannerism that means something doesn't work). We also made a 404 page that we found pretty delightful. (:
 
     </p>
   </div>
@@ -126,7 +135,7 @@ REFLECTION
   </div>
   <div class="flex-field">
     <p class="contain-text">
-      My front-end development skills and graphic design sensibilites have grown significantly since I finished this project. Still, it taught me all about the web stack, and although I'm typically spinning up servers in Node.js rather than Python these days, the fundamentals all happened in this project. Perhaps most importantly, this project really developed my love of front-end development - I just needed a chance to dive in.
+      If my projects have taught me anything, it's the fact that the simplest problems can actually end up being really complicated. A URL shortener, for example, is conceptually straightforward. If you want to build a really awesome URL shortener, however, you've got a little bit of hard work ahead of you, and a lot of that work is going to just involve a little bit of strategic (and dare I say philosophical?) thinking. Crisco was a great lesson in planning; we prioritized features and took smart stances on the behavior of our system before we ever started coding, and so the coding part was almost painless. Rather than dividing our attention between the system behavior and the behavior of the tools we were using to build the system, we could fully devote our attention to understanding exactly why Flask was giving us problems - and, of course, we could solve those problems because we knew exactly what we wanted to accomplish. Looking back at Crisco, I also realize that it was my first real introduction to web development - and, although I shudder a bit when I look at the github repo, it was a solid project because it's a great indicator of progress. Since building the URL shortener, I've picked up Node, MongoDB, and React. I'm loathe to write CSS without a preprocessor, and Flexbox rules my layouts. I'm building with Gulp and Grunt, and serving static sites on Jekyll. I can do a lot more with the web now, but Crisco is a good reminder that a solid stack and good software design is what really counts when you want to build an awesome application.
     </p>
   </div>
   <div class="flex-field">
