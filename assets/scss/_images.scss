@@ -15,6 +15,20 @@
 /*  =============================================================================
  *  PROJECT HEADERS
  *  ============================================================================= */
+.dance-dance-header {
+   @include home-img;
+   height: 40vh;
+   background: url("/assets/img/dance-dance/bryan.png") no-repeat center center;
+   background-size: contain;
+   }
+
+.light-jacket-header {
+  @include home-img;
+  height: 40vh;
+  background: url("/assets/img/lightjacket/lightjacket-1.jpg") no-repeat center center;
+  background-size: contain;
+}
+
 .crisco-header {
   @include home-img;
   height: 40vh;
@@ -49,11 +63,6 @@
     background: url("/assets/img/backgrounds/helloricky-ipad.png") no-repeat bottom left;
     background-size: contain;
     border-bottom: 1px solid #9D9390;
-    }
-
-  .text-right{
-      width: 40%;
-      margin: 5vw;
     }
 
     .skills-field{

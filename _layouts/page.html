@@ -6,58 +6,105 @@ css: [main]
 HEADER
 -->
 {{page.problem-img}}
-<section class="project-row">
-  <h2 class="text-center horizontal-center contain-text">{{page.title}}</h2>
-    <ul class="contain-text horizontal-center text-center">
-        <li><span class="h3">deliverable:</span> {{page.deliverable}}</li>
-        <li><span class="h3">role:</span> {{page.role}}</li>
-        <li><span class="h3">methods:</span> {{page.methods}}</li>
-        <li><span class="h3">artifacts:</span> {{page.artifacts}}</li>
-    </ul>
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">{{page.title}}</h2>
+  </div>
+  <div class="flex-field">
+    <dl>
+      <dt class="h3">deliverable:</dt>
+      <dd>{{page.deliverable}}</dd>
+      <dt class="h3">role:</dt>
+      <dd>{{page.role}}</dd>
+      <dt class="h3">methods:</dt>
+      <dd>{{page.methods}}</dd>
+      <dt class="h3">artifacts:</dt>
+      <dd>{{page.artifacts}}</dd>
+    </dl>
+  </div>
+  <div class="flex-field">
+
+  </div>
 </section>
 
 <!--
 PROBLEM
 -->
-<section class="project-row">
-    <h2 class="contain-text horizontal-center text-center">Problem</h2>
-    <p class="contain-text horizontal-center text-center">
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">Problem</h2>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
       {{page.problem}}
     </p>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
+      {{page.problem-2}}
+    </p>
+  </div>
 </section>
 
 <!--
 PROJECT IMAGES
 -->
 <section class="flex-row vmargin-2rem">
-  <div class="flex-field">
-    <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image"/>
-  </div>
-  <div class="flex-field">
-    <img src="{{page.process-img2}}" alt="page.process-txt2" class="flex-image" />
-  </div>
-  <div class="flex-field">
-    <img src="{{page.process-img3}}" alt="page.process-txt3" class="flex-image" />
-  </div>
+  <figure class="flex-field">
+    <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image work__image" />
+    <figcaption class="text-center width-90pct horizontal-center">
+      {{page.process-txt1}}
+    </figcaption>
+  </figure>
+  <figure class="flex-field">
+    <img src="{{page.process-img2}}" alt="page.process-txt2" class="flex-image work__image" />
+    <figcaption class="text-center width-90pct horizontal-center">
+      {{page.process-txt2}}
+    </figcaption>
+  </figure>
+  <figure class="flex-field">
+    <img src="{{page.process-img3}}" alt="page.process-txt3" class="flex-image work__image" />
+    <figcaption class="text-center width-90pct horizontal-center">
+      {{page.process-txt3}}
+    </figcaption>
+  </figure>
 </section>
 
 <!--
 ACTION
 -->
-<section class="project-row">
-  <h2 class="contain-text horizontal-center text-center">{{page.title}}</h2>
-  <p class="contain-text horizontal-center text-center">
-    {{content}}
-  </p>
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">{{page.title}}</h2>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
+      {{content}}
+    </p>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
+      {{content-contd}}
+    </p>
+  </div>
 </section>
 
 <!--
 REFLECTION
 -->
-<section class="project-row">
-  <h2 class="contain-text horizontal-center text-center">Reflection</h2>
-  <p class="contain-text horizontal-center text-center">
-    {{page.reflection}}
-  </p>
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">Reflection</h2>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
+      {{page.reflection}}
+    </p>
+  </div>
+  <div class="flex-field">
+    <p class="contain-text">
+      {{page.reflection-2}}
+    </p>
+  </div>
 </section>
 </div>

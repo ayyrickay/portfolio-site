@@ -20,6 +20,7 @@ html{
   font-size: 4.236rem;
 
   text-transform: uppercase;
+  text-rendering: optimizeLegibility;
 }
 
 h2, .h2{
@@ -34,7 +35,7 @@ h3, .h3{
   font-weight: 700;
 }
 
-p, li, dt{
+p, li, dt, figcaption{
   @include body-copy;
   line-height: 1.4;
 }
@@ -45,6 +46,14 @@ a{
   text-decoration: none;
 
   color: #000;
+}
+
+a:hover{
+  font-style: italic;
+}
+
+a h1:hover { //prevent header h1 from italicizing
+  font-style: none;
 }
 
 .header-title{
@@ -64,9 +73,17 @@ a{
     text-align: center;
   }
 
+.flex-row__title{
+  text-align: center;
+}
+
   @media(min-width: $medium-breakpoint){
     .mq-text-center{
       text-align: center;
+    }
+
+    .flex-row__title{
+      text-align: right;
     }
 
     html{

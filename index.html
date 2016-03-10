@@ -3,7 +3,7 @@ layout: default
 css: [main]
 ---
   <!-- INTRO -->
-<div class="about-img flex-row-col mq-align-end">
+<div class="about-img flex-row-col mq-align-end fade-in">
   <section class="mq-margin-left-50 home-vertical-center contain-text">
       <svg height="1" width="100%" class="svg-line">
         <line x1="0%" y1="0%" x2="100%" y2="100%" style="stroke:rgb(127,127,127); stroke-width:1"/>
@@ -71,15 +71,28 @@ css: [main]
   <!--
   PROJECTS
   -->
-  <section class="flex-row mq-height-60vh" id="projects">
+  <section class="flex-row align-items-baseline mq-height-60vh" id="projects">
     <h2 class="flex-header">Projects</h2>
+    <div class="flex-field">
+      <a href="/work/dance-dance">
+      <img src="/assets/img/dance-dance/bryan.png" alt="a long exposure photograph that shows bands of bright color spread across space in big, dramatic swirls" class="flex-image greyscale"/>
+      <h3 class="text-center">dance dance</h3></a>
+      <p class="text-center">Our team designed and built a sweater that uses accelerometers to interpret dancing and display the motion using LED strips on the sweater sleeves.<a href="/work/dance-dance">read more...<span class="vanish">about dance dance, a sweater that lights up while you dance.</span></a></p>
+    </div>
+
     <div class="flex-field">
       <a href="/work/aesthetic-notes">
         <img src="/assets/img/notes/notes-header.png" alt="a grid of bright colors, text, and photographs" class="flex-image greyscale"/>
       <h3 class="text-center">aesthetic notes</h3>
     </a>
-      <p class="text-center">When I review articles I've saved from the web, systems like Evernote focus on text. I designed an aesthetic-based concept for collections that puts images first. <a href="/work/aesthetic-notes">read more... <span class="vanish">about the aesthetic note project</span></a></p>
+      <p class="text-center">Reviewing notes is often a really text-heavy experience. What might it look like if it were a little more visually oriented? <a href="/work/aesthetic-notes">read more... <span class="vanish">about the aesthetic note project</span></a></p>
+    </div>
 
+    <div class="flex-field">
+      <a href="/work/light-jacket">
+      <img src="/assets/img/lightjacket/lightjacket-header.png" alt="silhouettes of four people with a simple line chart in the background" class="flex-image greyscale" />
+      <h3 class="text-center">the light jacket</h3></a>
+      <p class="text-center">Cold San Francisco summer evenings catch too many people off guard - so, to help out, I took simple weather data and made it into a narrative infographic. <a href="/work/light-jacket">read more...<span class="vanish">about the light jacket, a narrative infographic about weather in San Francisco</span></a></p>
     </div>
 
     <div class="flex-field">
@@ -87,7 +100,6 @@ css: [main]
       <img src="/assets/img/crisco/crisco-header.png" alt="a site with a light blue background and a smooth sans-serif typeface that says welcome" class="flex-image greyscale" />
       <h3 class="text-center">url shortener</h3></a>
       <p class="text-center">I wanted to learn more about the full web stack and associated protocols, so my friend and I went ahead and built an oddball url shortener called Crisco. <a href="/work/crisco">read more... <span class="vanish">about the url shortener project</span></a></p>
-
     </div>
 
     <div class="flex-field">
@@ -95,6 +107,9 @@ css: [main]
       <img src="/assets/img/nickvision/nickvision-header.png" alt="a grid of brightly colored squares on a fake iPhone screen" class="flex-image greyscale" />
       <h3 class="text-center">nickvision</h3></a>
       <p class="text-center">Nickelodeon is a household name - but my team was tasked with adding value to the brand. We proposed an augmented reality experience called Nickvision. <a href="/work/nickvision">read more...<span class="vanish">about nickvision, an augmented reality application concept</span></a></p>
+    </div>
+
+    <div class="flex-field">
 
     </div>
   </section>
@@ -103,16 +118,24 @@ css: [main]
   CONTACT
   -->
   <section class="flex-row vmargin-2rem" id="contact">
-      <h2 class="mq-text-center flex-header">Let's Talk</h2>
-      <ul class="contain-text text-center horizontal-center">
-        <li class="botpadding-quarter-rem"><span class="h3">email:</span> hello[at]rickydesign[dot]me </li>
+    <div class="flex-field">
+      <h2 class="flex-row__title">Let's Talk</h2>
+    </div>
+    <div class="flex-field">
+      <dl>
+        <dt class="h3">email:</dt>
+        <dd>hello[at]rickydesign[dot]me</dd>
+        <dt class="h3">twitter:</dt>
+        <dd><a href="http://twitter.com/ayyrickay" target="_blank"> @ayyrickay <span class="vanish">is my twitter handle, where I try to be clever.</span></a></dd>
+        <dt class="h3">instagram:</dt>
+        <dd><a href="http://instagram.com/ayyrickay" target="_blank">@ayyrickay <span class="vanish">is my instagram handle. You'll discover that it's mostly landscapes, with a chance of selfies.</span></a></dd>
+        <dt class="h3">github:</dt>
+        <dd><a href="http://github.com/ayyrickay" target="_blank">@ayyrickay <span class="vanish">is my github username - click to check out my repositories, including the source code for this site.</span></a></dd>
+        <dt class="h3">resume:</dt>
+        <dd><a href="/assets/documentation/resume.rickyholtz.pdf" target="_blank"> [PDF]<span class="vanish">is a pdf copy of my resume - an HTML version is on the way!</span></a></dd>
+      </dl>
+    </div>
+    <div class="flex-field">
 
-        <li class="vpadding-quarter-rem"><span class="h3">twitter:</span> <a href="http://twitter.com/ayyrickay" target="_blank"> @ayyrickay <span class="vanish">is my twitter handle, where I try to be clever.</span></a></li>
-
-        <li class="vpadding-quarter-rem"><span class="h3">instagram:</span> <a href="http://instagram.com/ayyrickay" target="_blank">@ayyrickay <span class="vanish">is my instagram handle. You'll discover that it's mostly landscapes, with a chance of selfies.</span></a></li>
-
-        <li class="vpadding-quarter-rem"><span class="h3">github:</span> <a href="http://github.com/ayyrickay" target="_blank">@ayyrickay <span class="vanish">is my github username - click to check out my repositories, including the source code for this site.</span></a></li>
-
-        <li class="vpadding-quarter-rem"><span class="h3">resume:</span> <a href="/assets/documentation/resume.rickyholtz.pdf" target="_blank"> [PDF]<span class="vanish">is a pdf copy of my resume - an HTML version is on the way!</span></a></li>
-      </ul>
+    </div>
   </section>
