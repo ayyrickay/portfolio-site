@@ -11,44 +11,46 @@
   width: auto;
 }
 
+@mixin header-img{
+  @include home-img;
+  height: 40vh;
+  background-size: contain;
+}
+
 
 /*  =============================================================================
  *  PROJECT HEADERS
  *  ============================================================================= */
 .dance-dance-header {
-   @include home-img;
-   height: 40vh;
    background: url("/assets/img/dance-dance/bryan.png") no-repeat center center;
-   background-size: contain;
-   }
+   @include header-img;
+}
 
 .light-jacket-header {
-  @include home-img;
-  height: 40vh;
   background: url("/assets/img/lightjacket/lightjacket-1.jpg") no-repeat center center;
-  background-size: contain;
+  @include header-img;
 }
 
 .crisco-header {
-  @include home-img;
-  height: 40vh;
   background: url("/assets/img/crisco/crisco-header.png") no-repeat center center;
-  background-size: contain;
-  }
+  @include header-img;
+}
 
 .aesthetic-header {
-  @include home-img;
-  height: 40vh;
   background: url("/assets/img/notes/notes-header.png") no-repeat center center;
-  background-size: contain;
-  }
+  @include header-img;
+}
 
 .nickvision-header {
-  @include home-img;
-  height: 40vh;
   background: url("/assets/img/nickvision/nickvision-header.png") no-repeat center center;
-  background-size: contain;
-  }
+  @include header-img;
+}
+
+.employee-community-header {
+  background: url("/assets/img/employee-community/employee-community-header.png") no-repeat center center;
+  @include header-img;
+}
+
 
 /*  =============================================================================
  *  IMAGE MEDIA QUERIES

@@ -18,6 +18,7 @@ html{
   font-family: "acumin-pro-extra-condensed", $base-font-style;
   font-weight: 900;
   font-size: 4.236rem;
+  line-height: 3.4rem;
 
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -32,46 +33,51 @@ h2, .h2{
 h3, .h3{
   @include body-copy;
 
+  text-transform: lowercase;
   font-weight: 700;
-}
-
-p, li, dt, figcaption{
-  @include body-copy;
-  line-height: 1.4;
-}
-
-a{
-  @include body-copy;
-  text-transform: uppercase;
-  text-decoration: none;
 
   color: #000;
 }
 
-a:hover{
-  font-style: italic;
+p, li, dt, dd, figcaption{
+  @include body-copy;
+  line-height: 1.8;
+  margin-bottom: 1.5vh;
 }
 
-a h1:hover { //prevent header h1 from italicizing
-  font-style: none;
+a{
+  @include body-copy;
+  text-decoration: none;
+
+  color: #236d9e;
+}
+
+header a{
+  text-transform: uppercase;
+  color: #000;
 }
 
 .header-title{
   font-size: 2.618rem;
 }
 
+.ol-decimal{
+  list-style: decimal;
+  margin-left: 1rem;
+}
 
- /*  =============================================================================
-  *  styling
-  *  ============================================================================= */
 
-  .white-text{
-    color: #fff;
-  }
+/* =============================================================================
+ *  styling
+ * ============================================================================= */
 
-  .text-center{
-    text-align: center;
-  }
+.white-text{
+  color: #fff;
+}
+
+.text-center{
+  text-align: center;
+}
 
 .flex-row__title{
   text-align: center;

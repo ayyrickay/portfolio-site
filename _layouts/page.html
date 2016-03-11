@@ -1,11 +1,12 @@
 ---
 layout: default
-css: [main]
+css: [main, magnifier]
+js: [event, magnifier]
 ---
 <!--
 HEADER
 -->
-{{page.problem-img}}
+  {{page.problem-img}}
 <section class="flex-row vmargin-2rem">
   <div class="flex-field">
     <h2 class="flex-row__title">{{page.title}}</h2>
@@ -34,10 +35,8 @@ PROBLEM
   <div class="flex-field">
     <h2 class="flex-row__title">Problem</h2>
   </div>
-  <div class="flex-field">
-    <p class="contain-text">
+  <div class="flex-field contain-text">
       {{page.problem}}
-    </p>
   </div>
   <div class="flex-field">
     <p class="contain-text">
@@ -50,20 +49,20 @@ PROBLEM
 PROJECT IMAGES
 -->
 <section class="flex-row vmargin-2rem">
-  <figure class="flex-field">
-    <img src="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image work__image" />
+  <figure class="flex-field magnifier-thumb-wrapper">
+    <img src="{{page.process-img1}}" data-large-img-url="{{page.process-img1}}" alt="{{page.process-txt1}}" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center">
       {{page.process-txt1}}
     </figcaption>
   </figure>
-  <figure class="flex-field">
-    <img src="{{page.process-img2}}" alt="page.process-txt2" class="flex-image work__image" />
+  <figure class="flex-field magnifier-thumb-wrapper">
+    <img src="{{page.process-img2}}" data-large-img-url="{{page.process-img2}}" alt="page.process-txt2" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center">
       {{page.process-txt2}}
     </figcaption>
   </figure>
-  <figure class="flex-field">
-    <img src="{{page.process-img3}}" alt="page.process-txt3" class="flex-image work__image" />
+  <figure class="flex-field magnifier-thumb-wrapper">
+    <img src="{{page.process-img3}}" data-large-img-url="{{page.process-img3}}" alt="page.process-txt3" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center">
       {{page.process-txt3}}
     </figcaption>
@@ -77,10 +76,8 @@ ACTION
   <div class="flex-field">
     <h2 class="flex-row__title">{{page.title}}</h2>
   </div>
-  <div class="flex-field">
-    <p class="contain-text">
+  <div class="flex-field contain-text">
       {{content}}
-    </p>
   </div>
   <div class="flex-field">
     <p class="contain-text">
@@ -96,10 +93,8 @@ REFLECTION
   <div class="flex-field">
     <h2 class="flex-row__title">Reflection</h2>
   </div>
-  <div class="flex-field">
-    <p class="contain-text">
+  <div class="flex-field contain-text">
       {{page.reflection}}
-    </p>
   </div>
   <div class="flex-field">
     <p class="contain-text">
