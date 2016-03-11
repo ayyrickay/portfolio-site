@@ -145,8 +145,7 @@ dd a{
 .flex-field{
   flex: auto;
   width: 200px;
-  min-width: 25%;
-  margin: .5vw;
+  margin: 3vw;
 }
 
 .flex-image{
@@ -221,6 +220,11 @@ dd a{
 
   .home-vertical-center{
     margin: auto 0 auto 50%;
+  }
+
+  .flex-field{
+    width: 22%;
+    margin: 2%;
   }
 
   .mq-horizontal-center{
