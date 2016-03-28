@@ -5,4 +5,5 @@ rickydesign.me
 <ul>
   <li>SaSS</li>
   <li>Gulp</li>
+  <li>Magnifier.js</li>
 </ul>
