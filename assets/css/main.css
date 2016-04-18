@@ -7,7 +7,9 @@
  *  BASE STYLES
  *  ============================================================================= *//*  =============================================================================
   *  Useful Miscellany
-  *  ============================================================================= */html {background-color: #f2f2f2;}.vanish {display: none;visibility: hidden;}.responsive-line {display: inline;}.content-group {margin: 2rem auto;}.page-margin {width: 90%;}.bottom-absolute {position: absolute;bottom: 0px;}.box-shadow {box-shadow: 0 2px 2px #999;}/*  =============================================================================
+  *  ============================================================================= */html {background-color: #f2f2f2;}/* Hidden content but is readable by screen readers.
+ * ex: icons might have hidden text so blind people know what the hell they are
+ */.assistive-text {position: absolute;border: 0;-webkit-clip-path: rect(1px, 1px, 1px, 1px);clip-path: rect(1px, 1px, 1px, 1px);width: 1px;height: 1px;margin: -1px;padding: 0;overflow: hidden;}.vanish {display: none;visibility: hidden;}.responsive-line {display: inline;}.content-group {margin: 2rem auto;}.page-margin {width: 90%;}.bottom-absolute {position: absolute;bottom: 0px;}.box-shadow {box-shadow: 0 2px 2px #999;}/*  =============================================================================
  *  Default elements
  *  ============================================================================= */nav {padding: 1.5rem 0 1rem 0;width: 90%;margin: 0 auto;}dt {float: left;clear: left;text-align: right;margin-bottom: .5em;width: 25%;}dd {float: left;margin-left: 1em;margin-bottom: .5em;padding-top: -1px;max-width: 65%;}dd a {padding-top: 2px;}/*  =============================================================================
  *  Layout
