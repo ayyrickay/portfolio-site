@@ -9,6 +9,20 @@ html{
   background-color: #f2f2f2;
 }
 
+/* Hidden content but is readable by screen readers.
+ * ex: icons might have hidden text so blind people know what the hell they are
+ */
+.assistive-text {
+  position: absolute;
+  border: 0;
+  clip-path: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+}
+
 .vanish{
   display: none;
   visibility: hidden;
