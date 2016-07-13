@@ -14,9 +14,8 @@
     <script src="https://use.typekit.net/jag1iiy.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     {%if page.css %}
-        <link rel="stylesheet" href="/assets/css/main.css" media="screen" type="text/css" />
-        {% for stylesheet in page.css %}
-        <link rel="stylesheet" href="/assets/css/{{stylesheet}}.css" media="screen" type="text/css">
-        {% endfor %}
+    {% for stylesheet in page.css %}
+    <link rel="stylesheet" href="/assets/css/{{stylesheet}}.css" media="screen" type="text/css">
+    {% endfor %}
     {% endif %}
 </head>
