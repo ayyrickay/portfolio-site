@@ -15,16 +15,16 @@ html{
  *  webfonts
  *  ============================================================================= */
 
- .wf-loading * {
+ .wf-loading {
    font-family: 'Helvetica Neue'
    visibility: hidden;
  }
 
- .wf-inactive * {
+ .wf-inactive {
    visibility: hidden;
  }
 
- .wf-active * {
+ .wf-active {
    visibility: visible;
  }
 
