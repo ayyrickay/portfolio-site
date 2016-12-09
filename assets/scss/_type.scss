@@ -20,8 +20,13 @@ html{
    visibility: hidden;
  }
 
- .wf-inactive {
-   visibility: hidden;
+ .wf-inactive .page-title {
+   font-family: "impact", "helvetica neue", "helvetica", "arial", sans-serif;
+   font-size: 3.4rem;
+ }
+
+ .wf-inactive p {
+   font-size: .9rem;
  }
 
  .wf-active {
