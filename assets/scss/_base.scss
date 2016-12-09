@@ -166,6 +166,14 @@ dd a{
   margin: 3vw;
 }
 
+.left-col {
+  @extend .flex-field;
+}
+
+.text-col {
+  @extend .flex-field;
+}
+
 .flex-image{
   width: 100%;
   height: auto;
@@ -241,8 +249,21 @@ dd a{
   }
 
   .flex-field{
+    flex-grow: 1;
     width: 22%;
     margin: 2%;
+  }
+
+  .left-col {
+    flex-grow: 1;
+    width: auto;
+    margin: 3vw;
+  }
+
+  .text-col {
+    flex-grow: 5;
+    width: auto;
+    margin: 3vw;
   }
 
   .mq-horizontal-center{
@@ -263,6 +284,10 @@ dd a{
 
   .contain-text{
     max-width: 30vw;
+  }
+
+  .flex-grow-5 {
+    flex-grow: 5;
   }
 
   .mq-height-60vh{
