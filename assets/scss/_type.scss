@@ -24,6 +24,15 @@ html{
    visibility: visible;
  }
 
+ #loading-text {
+   @extend .fade-in-and-out !optional;
+   display: none;
+   font-family: 'Georgia', serif;
+   font-style: italic;
+   margin-left: 20vw;
+   margin-top: 20vh;
+ }
+
 /*  =============================================================================
  *  hierarchy
  *  ============================================================================= */
