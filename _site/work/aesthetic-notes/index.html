@@ -15,7 +15,8 @@
 
     <!-- loading fonts and CSS -->
     <script src="https://use.typekit.net/jag1iiy.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try{Typekit.load({ async: true });}catch(e){}
+    </script>
     
     
     <link rel="stylesheet" href="/assets/css/main.css" media="screen" type="text/css">
@@ -164,13 +165,15 @@ REFLECTION
 </footer>
 
     <script type="text/javascript">
-        var evt = new Event(),
-        m = new Magnifier(evt);
+        if (window.location.pathname.indexOf('work') > -1) {
+          var evt = new Event(),
+          m = new Magnifier(evt);
 
-        m.attach({
-            thumb: '.work--zoom',
-            mode: 'inside'
-        });
+          m.attach({
+              thumb: '.work--zoom',
+              mode: 'inside'
+          });
+        }
     </script>
     <!-- Google Analytics-->
     <script>
