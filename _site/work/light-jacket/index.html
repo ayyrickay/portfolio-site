@@ -15,7 +15,14 @@
 
     <!-- loading fonts and CSS -->
     <script src="https://use.typekit.net/jag1iiy.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try{
+      Typekit.load({
+        async: true
+      });
+    } catch(e) {
+      console.error(e)
+    }
+    </script>
     
     
     <link rel="stylesheet" href="/assets/css/main.css" media="screen" type="text/css">
@@ -84,19 +91,19 @@ PROJECT IMAGES
 <section class="flex-row vmargin-2rem">
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/lightjacket/lightjacket-2.jpg" data-large-img-url="/assets/img/lightjacket/lightjacket-2.jpg" alt="a glance at the incredibly captivating table of weather data that I was working with. Is it any wonder nobody brings a coat?" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       a glance at the incredibly captivating table of weather data that I was working with. Is it any wonder nobody brings a coat?
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/lightjacket/lightjacket-4.jpg" data-large-img-url="/assets/img/lightjacket/lightjacket-4.jpg" alt="page.process-txt2" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       the before and after of an image being silhouetted; notice the faint texture of the hair against the jacket, and the awkward realism of the jacket
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/lightjacket/lightjacket-5.jpg" data-large-img-url="/assets/img/lightjacket/lightjacket-5.jpg" alt="page.process-txt3" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       flattening the silhouette in illustrator. The image becomes chunky and takes on new character, while also feeling aesthetically cohesive
     </figcaption>
   </figure>
@@ -131,6 +138,22 @@ REFLECTION
   </div>
 </section>
 
+<!--
+ADDITIONAL WORK
+-->
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">Additional projects</h2>
+  </div>
+  <div class="flex-field">
+    <a href="">
+    <img src="" alt="" class="flex-image" />
+    <h3></h3></a>
+    <p> <a href="">read more... <span class="assistive-text"></span></a></p>
+  </div>
+  <div class="flex-field"></div>
+</section>
+
     </main>
     <footer class="flex-container width-100pct botpadding-half-rem">
   <!-- loading jQuery and scripts -->
@@ -146,13 +169,15 @@ REFLECTION
 </footer>
 
     <script type="text/javascript">
-        var evt = new Event(),
-        m = new Magnifier(evt);
+        if (window.location.pathname.indexOf('work') > -1) {
+          var evt = new Event(),
+          m = new Magnifier(evt);
 
-        m.attach({
-            thumb: '.work--zoom',
-            mode: 'inside'
-        });
+          m.attach({
+              thumb: '.work--zoom',
+              mode: 'inside'
+          });
+        }
     </script>
     <!-- Google Analytics-->
     <script>

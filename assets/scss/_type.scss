@@ -12,13 +12,35 @@ html{
 }
 
 /*  =============================================================================
+ *  webfonts
+ *  ============================================================================= */
+
+ .wf-loading {
+   font-family: 'Helvetica Neue';
+   visibility: hidden;
+ }
+
+ .wf-inactive .page-title {
+   font-family: "impact", "helvetica neue", "helvetica", "arial", sans-serif;
+   font-size: $title-font-size * .802;
+ }
+
+ .wf-inactive p {
+   font-size: .9rem;
+ }
+
+ .wf-active {
+   visibility: visible;
+ }
+
+/*  =============================================================================
  *  hierarchy
  *  ============================================================================= */
 .page-title, h1{
   font-family: "acumin-pro-extra-condensed", $base-font-style;
   font-weight: 900;
-  font-size: 4.236rem;
-  line-height: 3.4rem;
+  font-size: $title-font-size;
+  line-height: .72;
 
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -55,6 +77,10 @@ a{
 header a{
   text-transform: uppercase;
   color: #000;
+}
+
+.figcaption {
+  font-size: 0.8rem;
 }
 
 .header-title{

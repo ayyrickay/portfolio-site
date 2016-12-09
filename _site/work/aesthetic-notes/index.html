@@ -15,7 +15,14 @@
 
     <!-- loading fonts and CSS -->
     <script src="https://use.typekit.net/jag1iiy.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try{
+      Typekit.load({
+        async: true
+      });
+    } catch(e) {
+      console.error(e)
+    }
+    </script>
     
     
     <link rel="stylesheet" href="/assets/css/main.css" media="screen" type="text/css">
@@ -84,19 +91,19 @@ PROJECT IMAGES
 <section class="flex-row vmargin-2rem">
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/notes/notes-1.jpg" data-large-img-url="/assets/img/notes/notes-1.jpg" alt="an early word association of a library, a common notetaking environment" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       an early word association of a library, a common notetaking environment
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/notes/notes-2.jpg" data-large-img-url="/assets/img/notes/notes-2.jpg" alt="page.process-txt2" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       a wireframe moving through fidelity with a focus on typography over page composition
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/notes/notes-3.jpg" data-large-img-url="/assets/img/notes/notes-3.jpg" alt="page.process-txt3" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       the transition to a bolder, more colorful aesthetic; additionally, this transitions from PSD to Sketch
     </figcaption>
   </figure>
@@ -130,8 +137,24 @@ REFLECTION
     <h2 class="flex-row__title">Reflection</h2>
   </div>
   <div class="flex-field flex-grow-5">
-       <p> Having had the majority of my training in user-centered design, the shift to a more visual approach to UI design felt pretty awkward. Yet, wrestling with the composition, color, and typography helps draw the connection between the two: a careful eye toward aesthetics can go a long way to creating a usable and delightful experience. It&#8217;s easy to dismiss aesthetics as subjective or extraneous &mdash; and, to be certain, in some cases the visual design is just for flair. In the vast majority of cases, however, the visual design of the interface is key for accessibility, navigability, and understandability. By thinking careful about the elements of graphic design, we can prevent people from getting distracted by confusing design choices, or we can direct attention using visual tension to draw the eye. </p>
+      <p>Having had the majority of my training in user-centered design, the shift to a more visual approach to UI design felt pretty awkward. Yet, wrestling with the composition, color, and typography helps draw the connection between the two: a careful eye toward aesthetics can go a long way to creating a usable and delightful experience. <p>It&#8217;s easy to dismiss aesthetics as subjective or extraneous &mdash; and, to be certain, in some cases the visual design is just for flair. In the vast majority of cases, however, the visual design of the interface is key for accessibility, navigability, and understandability. By thinking careful about the elements of graphic design, I can prevent people from getting distracted by confusing design choices and direct attention using visual tension to draw the eye.</p>
   </div>
+</section>
+
+<!--
+ADDITIONAL WORK
+-->
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">Additional projects</h2>
+  </div>
+  <div class="flex-field">
+    <a href="/work/employee-community">
+    <img src="/assets/img/employee-community/employee-community-header.png" alt="three laptops show clean grids of content, and a hint of a browser plugin" class="flex-image" />
+    <h3>employee community</h3></a>
+    <p>Sharing knowledge across an organization using siloed, web 2.0 intranets is hard. I designed a contextual employee community to help solve the problem. <a href="/work/employee-community">read more... <span class="assistive-text">about the salesforce employee community design project</span></a></p>
+  </div>
+  <div class="flex-field"></div>
 </section>
 
     </main>
@@ -149,13 +172,15 @@ REFLECTION
 </footer>
 
     <script type="text/javascript">
-        var evt = new Event(),
-        m = new Magnifier(evt);
+        if (window.location.pathname.indexOf('work') > -1) {
+          var evt = new Event(),
+          m = new Magnifier(evt);
 
-        m.attach({
-            thumb: '.work--zoom',
-            mode: 'inside'
-        });
+          m.attach({
+              thumb: '.work--zoom',
+              mode: 'inside'
+          });
+        }
     </script>
     <!-- Google Analytics-->
     <script>

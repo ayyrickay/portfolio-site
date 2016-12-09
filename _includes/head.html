@@ -12,7 +12,14 @@
 
     <!-- loading fonts and CSS -->
     <script src="https://use.typekit.net/jag1iiy.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try{
+      Typekit.load({
+        async: true
+      });
+    } catch(e) {
+      console.error(e)
+    }
+    </script>
     {%if page.css %}
     {% for stylesheet in page.css %}
     <link rel="stylesheet" href="/assets/css/{{stylesheet}}.css" media="screen" type="text/css">

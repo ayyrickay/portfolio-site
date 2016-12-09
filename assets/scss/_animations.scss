@@ -8,6 +8,11 @@
 
  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+ @keyframes oscillateFade {
+   0%, 100% { opacity: 0 }
+   50% { opacity: 1 }
+ }
+
 /*  =============================================================================
  *  GENERAL ANIMATIONS
  *  ============================================================================= */
@@ -17,6 +22,11 @@
  	animation:fadeIn ease-in 1;
  	animation-fill-mode: forwards;;
  	animation-duration: 1s;
+ }
+
+ .fade-in-and-out {
+   opacity: 1;
+   animation: oscillateFade 2s linear infinite;
  }
 
 /*  =============================================================================
