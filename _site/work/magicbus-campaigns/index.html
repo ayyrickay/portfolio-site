@@ -90,19 +90,19 @@ PROJECT IMAGES
 <section class="flex-row vmargin-2rem">
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/magicbus-campaigns/magicbus-campaigns-1.png" data-large-img-url="/assets/img/magicbus-campaigns/magicbus-campaigns-1.png" alt="if a trip isn't available, users are taken to a campaign page where they can customize their ideal commute" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       if a trip isn't available, users are taken to a campaign page where they can customize their ideal commute
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/magicbus-campaigns/magicbus-campaigns-2.png" data-large-img-url="/assets/img/magicbus-campaigns/magicbus-campaigns-2.png" alt="page.process-txt2" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       users select the amount they want to pledge; they see the discount associated with each ridepack
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
     <img src="/assets/img/magicbus-campaigns/magicbus-campaigns-3.png" data-large-img-url="/assets/img/magicbus-campaigns/magicbus-campaigns-3.png" alt="page.process-txt3" class="flex-image work__image work--zoom" />
-    <figcaption class="text-center width-90pct horizontal-center">
+    <figcaption class="text-center width-90pct horizontal-center figcaption">
       users are encouraged to share their campaign via social media; payment details are found in payment options
     </figcaption>
   </figure>
@@ -116,7 +116,8 @@ ACTION
     <h2 class="flex-row__title">magicbus campaigns</h2>
   </div>
   <div class="flex-field contain-text">
-      <h3>research</h3>
+      <img src="/assets/img/magicbus-campaigns/magicbus-campaigns-sketch.png" alt="an early sketch of magicbus campaigns" class="flex-image work__image"/>
+<h3>research</h3>
 <p>I started this project with a combination of user research and stakeholder conversations. Quickly, I found that quick user interviews didn't yield any stunning insights - the notion of a campaign felt like a natural way for people to interact with the app. The complexity, it turns out, came in the implementation. Building a campaign feature is a lot like making a game. We had to clarify the mechanics of the campaign, and do so in a way that wasn't overwhelming. Additionally, we needed to make sure that the incentives for campaigning were high, and that, ultimately, it would help us scale our service.</p>
 
 <h3>prototyping</h3>
@@ -125,6 +126,7 @@ ACTION
 <h3>building</h3>
 <p>Once the campaigns were generally well-understood, and we had evidence that people were willing to put money down for a route, I started building Campaigns with React. I had to balance UX and technical constraints carefully, ensuring that our API could support campaign functionalities, and scoping the project in as many ways as possible. For example, handling multiple campaigns quickly became a hairy task in terms of both visual presentation and business logic. Although multiple campaigns will definitely be necessary in the future, version one of Campaigns only allows for one campaign at a time. Another interesting challenge was the geography of campaigns. Users submit their specific start and end locations, but campaigns intelligently abstract to the neighborhood with reverse-geocoding. This helps reflect the collaborative spirit of campaigns. </p>
 
+<img src="/assets/img/magicbus-campaigns/sf-opengraph.png" alt="a vector illustration of a bus driving in front of San Francisco landmarks with the subheading 'Save your commute'" class="flex-image work__image"/>
 <h3>refinements</h3>
 <p>As MagicBus begins to broaden its product offerings, it's increasingly likely that people will be exposed to different products that have similar interfaces. After all, trips have many fundamental similarities. In order to help differentiate each product, I developed a series of product headers that include the product name, a short description, and a colorful icon. This will help people maintain context in the app, and alert them if they stumble upon a novel product.</p>
 <p>I also expanded sharing functionality so that people could post about their campaign on Facebook, LinkedIn, or Twitter. This helps spread campaigns through word-of-mouth. Additionally, the social media links and the associated sharing page are aware of campaigns and will change their content accordingly. I also used this as an opportunity to refresh the MagicBus social media brand by making some simple OpenGraph illustrations.</p>
@@ -152,6 +154,22 @@ REFLECTION
       
     </p>
   </div>
+</section>
+
+<!--
+ADDITIONAL WORK
+-->
+<section class="flex-row vmargin-2rem">
+  <div class="flex-field">
+    <h2 class="flex-row__title">Additional projects</h2>
+  </div>
+  <div class="flex-field">
+    <a href="/work/etal-health">
+    <img src="/assets/img/etal-health/etal-health-header.png" alt="two laptops and a phone with screens showing maps, an illustration of a doctor, and medical journal articles" class="flex-image" />
+    <h3>et al. Health</h3></a>
+    <p>et al. Health uses peer-reviewed medical journals to connect patients who have rare diseases with a physicians who can treat them. <a href="/work/etal-health">read more... <span class="assistive-text">about et all health</span></a></p>
+  </div>
+  <div class="flex-field"></div>
 </section>
 
     </main>
