@@ -8,13 +8,15 @@
     </main>
     {% include footer.html %}
     <script type="text/javascript">
-        var evt = new Event(),
-        m = new Magnifier(evt);
+        if (window.location.pathname.indexOf('work') > -1) {
+          var evt = new Event(),
+          m = new Magnifier(evt);
 
-        m.attach({
-            thumb: '.work--zoom',
-            mode: 'inside'
-        });
+          m.attach({
+              thumb: '.work--zoom',
+              mode: 'inside'
+          });
+        }
     </script>
     <!-- Google Analytics-->
     <script>

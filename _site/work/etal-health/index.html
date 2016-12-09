@@ -15,22 +15,23 @@
 
     <!-- loading fonts and CSS -->
     <script src="https://use.typekit.net/jag1iiy.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
-    
+    <script>try{Typekit.load({ async: true });}catch(e){}
+    </script>
+
+
     <link rel="stylesheet" href="/assets/css/main.css" media="screen" type="text/css">
-    
+
     <link rel="stylesheet" href="/assets/css/magnifier.css" media="screen" type="text/css">
-    
-    
+
+
 </head>
 
   <body>
     <header class="site-header">
-    
+
     <nav role="navigation" class=".mq-width-90 flex-container nav-items flex-jc-sb">
     <a href='http://rickydesign.me'><h1 class="header-title mq-vanish">Ricky Holtz</h1></a>
-    
+
     <ul class="flex-container nav-items page-margin">
     <li><h1 class="vanish">Navigation</h1></li>
     <li><a href='http://rickydesign.me'>Home</a></li>
@@ -78,7 +79,7 @@ PROBLEM
   </div>
   <div class="flex-field">
     <p class="contain-text">
-      
+
     </p>
   </div>
 </section>
@@ -137,7 +138,7 @@ ACTION
   </div>
   <div class="flex-field">
     <p class="contain-text">
-      
+
     </p>
   </div>
 </section>
@@ -154,7 +155,7 @@ REFLECTION
   </div>
   <div class="flex-field">
     <p class="contain-text">
-      
+
     </p>
   </div>
 </section>
@@ -178,11 +179,11 @@ ADDITIONAL WORK
     </main>
     <footer class="flex-container width-100pct botpadding-half-rem">
   <!-- loading jQuery and scripts -->
-   
+
   <script type="text/javascript" src="/assets/js/event.js"></script>
-  
+
   <script type="text/javascript" src="/assets/js/magnifier.js"></script>
-   
+
   <p class="horizontal-center">ricky holtz.
     <script type="text/javascript">
       document.write(new Date().getFullYear());
@@ -190,13 +191,15 @@ ADDITIONAL WORK
 </footer>
 
     <script type="text/javascript">
-        var evt = new Event(),
-        m = new Magnifier(evt);
+        if (window.location.pathname.indexOf('work') > -1) {
+          var evt = new Event(),
+          m = new Magnifier(evt);
 
-        m.attach({
-            thumb: '.work--zoom',
-            mode: 'inside'
-        });
+          m.attach({
+              thumb: '.work--zoom',
+              mode: 'inside'
+          });
+        }
     </script>
     <!-- Google Analytics-->
     <script>
