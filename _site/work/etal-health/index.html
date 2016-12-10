@@ -88,26 +88,26 @@ PROBLEM
 <!--
 PROJECT IMAGES
 -->
-<section class="flex-row vmargin-2rem">
+<!-- <section class="flex-row vmargin-2rem">
   <figure class="flex-field magnifier-thumb-wrapper">
-    <img src="/assets/img/etal-health/etal-health-1.png" data-large-img-url="/assets/img/etal-health/etal-health-1.png" alt="et al health provides a simple value proposition, a friendly mascot, and a clear prompt to enter a disease name" class="flex-image work__image work--zoom" />
+    <img src="" data-large-img-url="" alt="" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center figcaption">
-      et al health provides a simple value proposition, a friendly mascot, and a clear prompt to enter a disease name
+      
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
-    <img src="/assets/img/etal-health/etal-health-2.png" data-large-img-url="/assets/img/etal-health/etal-health-2.png" alt="page.process-txt2" class="flex-image work__image work--zoom" />
+    <img src="" data-large-img-url="" alt="page.process-txt2" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center figcaption">
-      next, users see a list of doctors and a map with their geographic location. This page also includes a disease description and variants of the condition
+      
     </figcaption>
   </figure>
   <figure class="flex-field magnifier-thumb-wrapper">
-    <img src="/assets/img/etal-health/etal-health-3.png" data-large-img-url="/assets/img/etal-health/etal-health-3.png" alt="page.process-txt3" class="flex-image work__image work--zoom" />
+    <img src="" data-large-img-url="" alt="page.process-txt3" class="flex-image work__image work--zoom" />
     <figcaption class="text-center width-90pct horizontal-center figcaption">
-      finally, users see the physician's full profile, which includes article abstracts, related doctors, and contact information
+      
     </figcaption>
   </figure>
-</section>
+</section> -->
 
 <!--
 ACTION
@@ -118,21 +118,39 @@ ACTION
   </div>
   <div class="flex-field flex-grow-5">
       <img src="/assets/img/etal-health/personas.png" alt="the patient, the doctor, and the family member - three key personas for the et al. health product" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  key personas
+</figcaption>
 <h3>knowing our space</h3>
 <p>My team included two data scientists and one other designer. We worked alongside Marti Hearst, a professor at the Berkeley I School, Maryam Ziaie, co-founder and CEO of iSono Health, and the Castleman Disease Collaborative Network. They helped us with our product implementation, our business model, and subject matter expertise, respectively. Additionally, we conducted 18 interviews and analyzed 9 competitors in the healthcare space in order to develop our solution.</p>
 
 <img src="/assets/img/etal-health/sketching.png" alt="various sketches on a whiteboard with annotations" class="flex-image work__image"/>
-<p>Early in our design process, we realized that, fundamentally, we were building a search engine. Basic search patterns already exist, so we didn't need to reinvent the wheel. Instead, we decided to define clear principles that could guide the search experience in et al. Health. They were: honesty, trust, inclusiveness, and uniqueness.</p>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  early brainstorming work
+</figcaption>
+<p>Early in our design process, we accepted that we were building a search engine. Basic search patterns already exist, so we didn't need to reinvent the wheel. Instead, we decided to define clear principles that could guide the search experience in et al. Health. They were: honesty, trust, inclusiveness, and uniqueness.</p>
 
+<img src="/assets/img/etal-health/etal-health-1.png" alt="the et al health home page" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  et al health provides a simple value proposition, a friendly mascot, and a clear prompt to enter a disease name
+</figcaption>
 <h3>honesty</h3>
 <p>Sometimes, these principles helped us define a realistic scope. Good usability practice suggests including a rating system in order to help people sort through results. We considered implementing a metric of a doctor's research record quality. Once we started doing usability tests, however, we found that it was way too easy to misinterpret ratings. Generally, people thought that the rating system was an assessment of overall doctor quality, or user-submitted reviews. We tried to confront this by switching from stars to circles, and it still didn't work! In the end, to keep the interface honest, we got rid of the rating system. After all, what does an objective metric look like, anyway? For example, a high quantity of articles could be good, because it means they're knowledgeable about the disease &mdash; but, to others, it might be bad, because maybe that research record indicates that the doctor doesn't spend much time with patients. We didn't have the time or resources to tackle this complicated problem, so instead, we exposed article abstracts and linked to the full text so that people could develop their own understanding. </p>
 
+<img src="/assets/img/etal-health/etal-health-2.png" alt="the et al health home page" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  users see a list of doctors and a map with their geographic location. This page also includes a disease description and variants of the condition
+</figcaption>
 <h3>trustworthiness</h3>
 <p>We felt like medical journal articles provide useful context and add to the professionalism of our site. Yet, patients and families didn't really understand them. When they saw complicated titles, like, "HHV-8+, EBV+ multicentric plasmablastic microlymphoma in an HIV+ man", they were understandably confused. And yet, they really trusted the articles, and assumed that they meant the doctor "knew what they were talking about." As designers, this gave us a lot of power. Fortunately, peer-review is a useful proxy for quality, but moving forward, we want to consider our data pipeline more carefully. We want to make sure that we're handling our users' trust responsibly.</p>
 
 <h3>inclusiveness</h3>
 <p>We spoke to many people with rare diseases who expressed feelings of being excluded. After all, most healthcare sites cater to people with more common diseases. We wanted to make sure that we designed a site that was as inclusive as possible. First of all, we made sure that our site accommodated as wide a range of ages and access needs. et al. Health is AA accessible, and navigable with a screen reader. Furthermore, we considered medical knowledge to be an important facet of accessibility, and so we used the principle of progressive exposure to help expose granular information to experts without overwhelming novices. First, a person sees a doctor, then an overview of their research and location information, and finally, they can view the full article on PubMed. Finally, et al. Health is fully responsive and autoprefixed to accommodate as many browsers and contexts as possible.</p>
 
+<img src="/assets/img/etal-health/etal-health-3.png" alt="the et al health home page" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  users see the physician's full profile, which includes article abstracts, related doctors, and contact information
+</figcaption>
 <h3>uniqueness</h3>
 <p>Little details helped us differentiate et al. Health. For example, doctor photos were a little bit of extra effort on our part, since there's not a formalized repository of physician photos. We were also concerned that photos might introduce bias into the decision-making process. In the end, however, one research participant mentioned that, "photos give you a little more certainty in a very uncertain process." There are very few 'knowns' when you have a rare disease &mdash; so, when you walk into a doctor's office, it's nice to know exactly who you're looking for. We also exposed information like disease subtypes, and patient resource groups in our interface. All of this helped users hone in on the right treatment, as well as support tailored to their conditions. Again, this required a little more manual labor on our part, but if it means that patients get the care they deserve, it's worth it!</p>
 
