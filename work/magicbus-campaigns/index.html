@@ -9,12 +9,6 @@ methods: "rapid wireframing and prototyping. competitive analysis. copywriting. 
 artifacts: "<a href='https://m.magicbus.io/'>MagicBus</a>"
 problem-img: "<div class='magicbus-campaigns-header' title='three laptops featuring screens with grids, clean images, and a sidebar plugin'></div>"
 problem: "<p>MagicBus is a commuting company that helps save people time and effort in their daily commute. While the MagicBus service is great, it isn't ubiquitous yet. The bay area is a big place, and buses are expensive. MagicBus needed a good way to learn when and where we needed to launch new bus routes.</p>"
-process-img1: "/assets/img/magicbus-campaigns/magicbus-campaigns-1.png"
-process-txt1: "if a trip isn't available, users are taken to a campaign page where they can customize their ideal commute"
-process-img2: "/assets/img/magicbus-campaigns/magicbus-campaigns-2.png"
-process-txt2: "users select the amount they want to pledge; they see the discount associated with each ridepack"
-process-img3: "/assets/img/magicbus-campaigns/magicbus-campaigns-3.png"
-process-txt3: "users are encouraged to share their campaign via social media; payment details are found in payment options"
 reflection: "<p>Up 'til this point, I've designed many of my interfaces from scratch. MagicBus Campaigns were interesting, because they existed in the context of a broader product. This guided a surprising amount of my design and development processes. I started reusing key app components to create consistent patterns for users and reduce development overhead. Small touches like social media icons, or shifting from the booking flow to the campaign component make a huge difference in the overall user experience.</p> <p>MagicBus Campaigns are also the first feature that I've had control over from inception to launch - and, if I learned anything, it's that launching can take a long time! Most importantly, I had to think on my feet during the entire design process. In the face of so many unknowns, there wasn't always clear data pushing us toward one decision or another. Instead, I needed to fall back on core usability principles, competitive analysis, and good old-fashioned hunches. Instead of trying to build the perfect campaigns the first time around, I focused on making smart guesses, and leaving my design flexible enough to accommodate changes in the future.</p>"
 additional-work-url: "/work/etal-health"
 additional-work-img: "/assets/img/etal-health/etal-health-header.png"
@@ -23,17 +17,34 @@ additional-work-title: "et al. Health"
 additional-work-description: "et al. Health uses peer-reviewed medical journals to connect patients who have rare diseases with a physicians who can treat them."
 additional-work-assist-text: "about et all health"
 ---
-<img src="/assets/img/magicbus-campaigns/magicbus-campaigns-sketch.png" alt="an early sketch of magicbus campaigns" class="flex-image work__image"/>
+
+<img src="/assets/img/magicbus-campaigns/magicbus-campaigns-1.png" alt="a grid of business related social media posts and updates from an employer" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  if a trip isn't available, users are taken to a campaign page where they can customize their ideal commute
+</figcaption>
 <h3>research</h3>
 <p>I started this project with a combination of user research and stakeholder conversations. Quickly, I found that quick user interviews didn't yield any stunning insights - the notion of a campaign felt like a natural way for people to interact with the app. The complexity, it turns out, came in the implementation. Building a campaign feature is a lot like making a game. We had to clarify the mechanics of the campaign, and do so in a way that wasn't overwhelming. Additionally, we needed to make sure that the incentives for campaigning were high, and that, ultimately, it would help us scale our service.</p>
 
+<img src="/assets/img/magicbus-campaigns/magicbus-campaigns-2.png" alt="a grid of business related social media posts and updates from an employer" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  users select the amount they want to pledge; they see the discount associated with each ridepack
+</figcaption>
 <h3>prototyping</h3>
 <p>Once I understood the problem, I started doing sketches of the interface. I discussed these sketches with various team members in order to help align on key decisions - for example, should the unit of funding be dollars, days, or trips? Is a person campaigning for their specific commute, or for a connection between two areas? All of these constraints needed to be clearly represented in the interface, and then communicated to the user. In order to better guide these constraints, one of my coworkers ran an experiment with crowdfunding, using a third party tool called Celery to simulate the idea of campaigns. Additionally, I started moving my sketches into high fidelity prototypes in order to get concrete feedback on the interface.</p>
+
 
 <h3>building</h3>
 <p>Once the campaigns were generally well-understood, and we had evidence that people were willing to put money down for a route, I started building Campaigns with React. I had to balance UX and technical constraints carefully, ensuring that our API could support campaign functionalities, and scoping the project in as many ways as possible. For example, handling multiple campaigns quickly became a hairy task in terms of both visual presentation and business logic. Although multiple campaigns will definitely be necessary in the future, version one of Campaigns only allows for one campaign at a time. Another interesting challenge was the geography of campaigns. Users submit their specific start and end locations, but campaigns intelligently abstract to the neighborhood with reverse-geocoding. This helps reflect the collaborative spirit of campaigns. </p>
 
 <img src="/assets/img/magicbus-campaigns/sf-opengraph.png" alt="a vector illustration of a bus driving in front of San Francisco landmarks with the subheading 'Save your commute'" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  a simple opengraph illustration to drive people to the new web app
+</figcaption>
 <h3>refinements</h3>
 <p>As MagicBus begins to broaden its product offerings, it's increasingly likely that people will be exposed to different products that have similar interfaces. After all, trips have many fundamental similarities. In order to help differentiate each product, I developed a series of product headers that include the product name, a short description, and a colorful icon. This will help people maintain context in the app, and alert them if they stumble upon a novel product.</p>
+
+<img src="/assets/img/magicbus-campaigns/magicbus-campaigns-3.png" alt="a grid of business related social media posts and updates from an employer" class="flex-image work__image"/>
+<figcaption class="text-center width-90pct horizontal-center figcaption">
+  users are encouraged to share their campaign via social media; payment details are found in payment options
+</figcaption>
 <p>I also expanded sharing functionality so that people could post about their campaign on Facebook, LinkedIn, or Twitter. This helps spread campaigns through word-of-mouth. Additionally, the social media links and the associated sharing page are aware of campaigns and will change their content accordingly. I also used this as an opportunity to refresh the MagicBus social media brand by making some simple OpenGraph illustrations.</p>
