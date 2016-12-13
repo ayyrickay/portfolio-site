@@ -22,7 +22,7 @@
     </script>
     {%if page.css %}
     {% for stylesheet in page.css %}
-    <link rel="stylesheet" href="/assets/css/{{stylesheet}}.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/{{stylesheet}}.css?version={{ site.data.cache_buster | truncate: 10, '' }}" media="screen" type="text/css">
     {% endfor %}
     {% endif %}
 </head>
