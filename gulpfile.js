@@ -3,7 +3,7 @@
 
 var gulp = require('gulp')
 var sass = require('gulp-sass')
-var imageop = require('gulp-image-optimization')
+var imagemin = require('gulp-imagemin')
 var cp = require('child_process')
 // var plumber = require('gulp-plumber')
 var autoprefixer = require('gulp-autoprefixer')
@@ -11,12 +11,14 @@ var autoprefixer = require('gulp-autoprefixer')
 var browserSync = require('browser-sync')
 var cmq = require('gulp-combine-mq')
 var hashsum = require('gulp-hashsum')
+var cleanCSS = require('gulp-clean-css')
 
 gulp.task('sass', function (done) {
   return gulp.src('assets/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cmq({beautify: false}))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(hashsum({filename: '_data/cache_buster.yml', hash: 'md5'}))
     .pipe(gulp.dest('assets/css'))
     .pipe(gulp.dest('_site/assets/css'))
@@ -24,12 +26,9 @@ gulp.task('sass', function (done) {
 })
 
 gulp.task('images', function (cb) {
-  gulp.src(['_img/**/*.png', '_img/**/*.jpg']).pipe(imageop({
-    optimizationLevel: 5,
-    progressive: true,
-    interlaced: true
-  }))
-  .pipe(gulp.dest('assets/img').on('end', cb).on('error', cb))
+  gulp.src(['_img/**/*.png', '_img/**/*.jpg'])
+  .pipe(imagemin())
+  .pipe(gulp.dest('assets/img'))
 })
 
 // Run Jekyll Build Asynchronously
@@ -53,12 +52,14 @@ gulp.task('browser:sync', ['build:jekyll'], function () {
 
 gulp.task('watch', function () {
   gulp.watch('assets/scss/**/*.scss', ['sass'])
-  gulp.watch(['index.html',
-              '_includes/*.html',
-              '_layouts/*.html',
-              'work/*/*.html',
-              '*.md'],
-              ['jekyll-rebuild'])
+  gulp.watch([
+    'index.html',
+    '_includes/*.html',
+    '_layouts/*.html',
+    'work/*/*.html',
+    '*.md'
+  ],
+  ['jekyll-rebuild'])
 })
 
 gulp.task('default', function () {
