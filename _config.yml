@@ -2,7 +2,7 @@
 title: Ricky Holtz Portfolio
 email: hello@rickyholtz.com
 description: > # this means to ignore newlines until "baseurl:"
-    A user-focused designer interested in all things front-end, with a focus on development and visual design that's with people, for people.
+    Ricky Holtz is a software engineer with an interest in product development. He's particularly interested in developer tools, computer science education, and the interfaces between digital and physical experiences.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rickyholtz.com" # the base hostname & protocol for your site
 twitter_username: ayyrickay
