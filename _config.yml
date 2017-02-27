@@ -1,15 +1,15 @@
 # Site settings
 title: Ricky Holtz Portfolio
-email: hello@rickydesign.me
+email: hello@rickyholtz.com
 description: > # this means to ignore newlines until "baseurl:"
     A user-focused designer interested in all things front-end, with a focus on development and visual design that's with people, for people.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rickydesign.me" # the base hostname & protocol for your site
+url: "http://rickyholtz.com" # the base hostname & protocol for your site
 twitter_username: ayyrickay
 github_username:  ayyrickay
 
 # Build settings
 markdown: kramdown
 #remvoing Jekyll's control over SASS files
-exclude: [node_modules, gulpfile.js, package.json, assets/scss]
+exclude: [node_modules, gulpfile.js, package.json, assets/scss, README.md]
 keep_files: []
