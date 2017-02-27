@@ -11,5 +11,5 @@ github_username:  ayyrickay
 # Build settings
 markdown: kramdown
 #remvoing Jekyll's control over SASS files
-exclude: [node_modules, gulpfile.js, package.json, assets/scss]
+exclude: [node_modules, gulpfile.js, package.json, assets/scss, README.md]
 keep_files: []
