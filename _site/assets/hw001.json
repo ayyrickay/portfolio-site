@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "name": "Mark Zuckerberg",
+  "profilePhoto": "http://placebeyonce.com/450-300",
+  "emailAddressConfirmed": true,
+  "friends": [{"name": "Ricky Holtz", "id": 3}, {"name": "Sarah Van Wart", "id": 2}],
+  "phone": null,
+  "address": {
+    "street": "1 Hacker Way",
+    "city": "Menlo Park",
+    "state": "CA",
+    "zipCode": "941025"
+  }
+}
